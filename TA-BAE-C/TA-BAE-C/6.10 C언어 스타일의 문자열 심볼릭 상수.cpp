@@ -16,7 +16,7 @@ int main()
 	cout << (uintptr_t)name << name << endl;		// 14322480 Jack Jack
 	cout << (uintptr_t)name2 << name2 << endl;		// 14322480 Jack Jack
 	cout << (uintptr_t)getName() << getName() << endl; // 14322480 Jack Jack
-	// 같은 주소가 출력됨
+	// 문자열이 같으면 같은 주소가 출력됨
 
 	char c = 'Q';
 	cout << &c << endl; // Qㅁㅁㅁㅁㅁㅁㅁㅁ // null 까지 출력

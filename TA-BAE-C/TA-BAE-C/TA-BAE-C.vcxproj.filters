@@ -75,6 +75,30 @@
     <ClCompile Include="6.10 C언어 스타일의 문자열 심볼릭 상수.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="8.3 생성자 Constructors.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.3 생성자 Constructors2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.4 생성자 멤버 초기화 목록.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.5 위임 생성자.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.6 소멸자 destructor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.12 동적 할당 배열.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.13 포인터와 const.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.14 참조 변수 reference variable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="4.7 열거형 enumerated types.cpp">

@@ -9,6 +9,7 @@ void main1()
 
 	char name[] = "JackJack";
 	cout << *name << endl; // JackJack? J? // J !
+	cout << name << endl; // JackJack ! // '\0'까지 출력
 }
 
 /*******************************************************************/
@@ -16,7 +17,7 @@ void main1()
 // void printArray(int* array)와 같다
 void printArray(int array[]) /* 내부적으로 포인터*/
 {
-	cout << sizeof(array) << endl;		// 8
+	cout << sizeof(array) << endl;		// 8 (x64에서 포인터 변수는 무조건 8byte)
 }
 
 int main()
@@ -24,7 +25,10 @@ int main()
 	int array[5] = { 1,2,3,4,5 };
 	int *ptr = array;
 
-	cout << sizeof(array) << endl;		// 20 (int 5개)
+	cout << array << endl;		// 같은 주소 출력
+	cout << &array[0] << endl;	// 같은 주소 출력
+
+	cout << sizeof(array) << endl;		// 20 (int 5개) 
 	printArray(array);					// 8 (x64에서 포인터 변수는 무조건 8byte)
 	cout << sizeof(&array[0]) << endl;	// 8 (x64에서 포인터 변수는 무조건 8byte)
 	cout << sizeof(ptr) << endl;		// 8 (x64에서 포인터 변수는 무조건 8byte)

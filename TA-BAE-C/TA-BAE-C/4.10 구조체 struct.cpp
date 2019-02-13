@@ -2,7 +2,7 @@
 
 using namespace std;
 
-struct Employee // 14? 16? // 패딩
+struct Employee // 14? 16? // 패딩 때문에 16
 {
 	short	id;		// 2 bytes
 	int		age;	// 4 bytes

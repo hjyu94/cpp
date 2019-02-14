@@ -21,9 +21,6 @@
     <ClCompile Include="4.2 My Cosntatns.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="4.2 외부연결 test.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="4.2 전역 변수, 정적 변수, 내부 연결, 외부 연결.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
@@ -99,6 +96,60 @@
     <ClCompile Include="6.14 참조 변수 reference variable.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="4.2 외부연결 test1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 외부연결 test2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 전역 변수, 정적 변수, 내부 연결, 외부 연결2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 헤더파일을 이용한 외부연결1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 헤더파일을 이용한 외부연결2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 외부연결시 모두 복사되는 문제 해결하기1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 외부연결시 모두 복사되는 문제 해결하기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="4.2 외부연결시 모두 복사되는 문제 해결하기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1.11 헤더파일 만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1.11 헤더파일 만들기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1.11.2 헤더파일 만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1.11.3 헤더파일 만들기.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="1.11.3 헤더파일 만들기2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.15 참조와 const.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="6.17 C++11 For-each 반복문.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11.1 상속의 기본 (1).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11.1 상속의 기본 (1)_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="11.1 상속의 기본 (1)_3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="4.7 열거형 enumerated types.cpp">
@@ -110,6 +161,18 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="4.2 My Constants.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="4.2 헤더파일을 이용한 외부연결3.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="4.2 외부연결시 모두 복사되는 문제 해결하기.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="1.11.2 헤더파일 만들기2.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="1.11.3 헤더파일 만들기.h">
       <Filter>소스 파일</Filter>
     </ClInclude>
   </ItemGroup>

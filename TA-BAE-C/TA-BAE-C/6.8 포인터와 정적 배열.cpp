@@ -10,6 +10,8 @@ void main1()
 	char name[] = "JackJack";
 	cout << *name << endl; // JackJack? J? // J !
 	cout << name << endl; // JackJack ! // '\0'까지 출력
+
+	// cout에서 문자열의 주소가 들어오면 주소가 아니라 문자열이 출력된다!!
 }
 
 /*******************************************************************/

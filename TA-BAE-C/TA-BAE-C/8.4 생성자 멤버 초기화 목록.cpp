@@ -8,8 +8,10 @@ public:
 	int m_b;
 
 	B(const int& m_b_in)
-		: m_b(m_b_in)
-	{}
+/*4*/		 : m_b(m_b_in)
+		{
+/*5*/		cout << "B constructor" << endl;
+		}
 };
 
 class Something
@@ -22,12 +24,13 @@ private:
 
 public:
 	Something()
-		: m_i{ 1 },
-		m_arr{ 1,2,3,4,5 }, /* 배열도 이니셜라이즈 리스트 사용 가능*/
-		m_b{ m_i - 1 }
-	{
-		m_i = 2; // 이게 제일 쎔
-	}
+/*1*/		: m_i{ 1 },
+/*2*/		m_arr{ 1,2,3,4,5 }, /* 배열도 이니셜라이즈 리스트 사용 가능*/
+/*3*/		m_b{ m_i - 1 }
+		{
+/*6*/		m_i = 2; // 이게 제일 쎔
+/*7*/		cout << "Something constructor" << endl;
+		}
 };
 
 int main()
@@ -39,3 +42,4 @@ int main()
 
 	// 생성자의 {} 안에 넣어준 값이 최종값이 된다.
 }
+

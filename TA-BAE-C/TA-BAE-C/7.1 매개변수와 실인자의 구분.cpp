@@ -26,13 +26,18 @@ void doSomething2(int &x)
 	cout << x << ", " << &x << endl;
 	x = x + 1;
 }
-// 변수 자체를 넘기기 때문에 주소도 똑같고 복사도 이뤄지지 않는다.
+// 레퍼런스 변수를 이용하기 때문에 주소도 똑같고 복사도 이뤄지지 않는다.
 
 
 // degree: 값에 의한 전달, 값이 바뀌어도 함수를 나갈때 사라짐. 입력으로 쓰인 것
-// const double degree: 함수 내에서 값이 바뀌지 않는다.
 // sin_out, cos_out: 참조에 의한 전달, 값이 바뀐다. 입출력으로 쓰임
 // 레퍼런스를 함수를 이용해서 여러개의 값을 리턴해주는 꼴로 사용한 예
+
+// const double degree: 매개변수가 const인 경우?
+//	: 함수 내에서 해당 변수의 값을 바꾸지 않겠다.
+// cf) 함수가 const인 경우?
+//	: 클래스에서 멤버 함수를 const로 만들 수 있는데
+//	: 해당 클래스의 멤버 변수 값을 바꾸지 않겠다는 표시이다.
 void getSinCos(const double degree, double &sin_out, double &cos_out)
 {
 	static const double pi = 3.141592;
@@ -50,6 +55,8 @@ void doSomething3(int *&ptr) /* ((int*) &ptr) */
 {
 	cout << ptr << ", " << &ptr << endl;
 }
+// 이 경우 포인터 변수를 레퍼런스 변수로 받기 때문에
+// 함수 내에서 출력한 포인터 변수의 주소도 동일하게 출력된다.
 
 int main()
 {
@@ -89,5 +96,6 @@ int main()
 	int z = 5;
 	int *ptr = &z;
 	doSomething3(ptr);
+	// void doSomething3(int *&ptr);
 
 }

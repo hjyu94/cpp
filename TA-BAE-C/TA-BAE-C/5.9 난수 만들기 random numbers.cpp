@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstdlib> // std::rand(), std::srand()
+// #include <cstdlib> // std::rand(), std::srand()
 #include <ctime> // std::time()
 using namespace std;
 

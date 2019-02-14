@@ -26,10 +26,14 @@ void main1()
 void main()
 {
 	int array[]{1, 2, 3, 4, 5};
+
+	// cf) 
+	// int* arr = new int[]{ 1,2,3,4,5 }; // X
+	// 에러: new 식에서는 배열 크기를 지정해야 합니다.
+
 	int *ptr = array;
 
 	for (int i = 0; i < 5; ++i) 
 		cout << *(ptr+i) << " " << (uintptr_t)(ptr+i) << endl;
 }
 // array[i] = *(array+i)
-

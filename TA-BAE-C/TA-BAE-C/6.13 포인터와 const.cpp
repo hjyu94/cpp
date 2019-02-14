@@ -40,8 +40,8 @@ int main()
 
 	int val1 = 5, val2 = 10;
 	const int* c_ptr = &val1;
-	c_ptr = &val2;	// O
 	*c_ptr = 30;	// X
+	c_ptr = &val2;	// O
 
 	// 주소가 가리키고 있는 값을 바꾸지 않겠다는 뜻이지
 	// ptr의 값을 바꾸지 않겠다는 뜻이 아님
@@ -63,7 +63,7 @@ int main()
 
 	/******************************************************/
 	
-	//#5 ???
+	//#5 상수 변수를 담는 상수 포인터 변수
 
 	const int* const cc_ptr = &value;
 	*cc_ptr = 10; // X

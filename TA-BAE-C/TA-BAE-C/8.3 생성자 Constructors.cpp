@@ -44,7 +44,7 @@ class Fraction2
 private:
 	int m_numerator;
 	int m_denominator;
-	// 초기화해주지 않으면 가비지 값이 들어있다.
+	// 초기화해주지 않고 출력해보면 런타임 에러 발생
 
 public:
 	Fraction2(int x) // 기본 생성자는 사라지게 됨

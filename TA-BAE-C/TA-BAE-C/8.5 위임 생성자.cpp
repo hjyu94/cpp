@@ -25,4 +25,5 @@ int main()
 {
 	Student std1(0, "ABC");
 	Student std2("DEF");
+	// 두 가지 방식을 모두 이용해서 객체를 만들고 싶은 상황
 }

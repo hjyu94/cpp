@@ -1,5 +1,5 @@
 #include <iostream>
-#include <cstddef>
+#include <cstddef> // std::nullptr_t
 using namespace std;
 
 void doSomething(double* ptr)

@@ -44,7 +44,7 @@ void doSomething()
 	// 매번 새로운 메모리가 a에 할당된다
 	++a;
 	cout << a << endl;
-}
+} // 여기서 a 메모리 반납함
 
 int main()
 {
@@ -92,13 +92,15 @@ int main()
 	doSomething(); // 2
 	doSomething(); // 3
 	doSomething(); // 4
+
+	a = 1; // X
 }
 
 /********************************************************/
 
 #include <iostream>
 
-int a = 1;
+int a = 1; // 전역변수. 다른 cpp 파일에서 extern으로 선언해주면 사용 가능
 
 void doSomething()
 {
@@ -149,7 +151,7 @@ int main()
 // 2) 전방선언
 
 #include <iostream>
-// #include "4.2 외부연결 test.cpp"
+// #include "4.2 전역 변수, 정적 변수, 내부 연결, 외부 연결2.cpp"
 #include "4.2 My Constants.h"
 
 // forward declaration

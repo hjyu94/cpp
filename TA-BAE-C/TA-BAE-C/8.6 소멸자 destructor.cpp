@@ -28,6 +28,8 @@ void main1()
 	// 1 생성
 	// 1 소멸
 	// 0 소멸
+	// 지역 변수들은 스택에 쌓인다
+	// 스택은 LIFO(last in first out)
 }
 // 자기 영역을 벗어날 때 소멸된다. 
 
@@ -35,7 +37,7 @@ void main1()
 
 void main2()
 {
-	Simple* s1 = new Simple(0); // 메모리 동적할당
+	Simple* s1 = new Simple(0); // 메모리 동적할당 // 힙
 	Simple s2(1);
 
 	delete s1;
@@ -77,8 +79,10 @@ void main()
 	while (true)
 	{
 		IntArray my_int_arr(10000); // 메모리 누수 발생
-									// delete[] my_int_arr.m_arr; // private이라 액세스 불가
-									// --> 이럴 경우를 대비해서 클래스의 소멸자에 기능 구현
+		// delete[] 로 메모리를 반납해야 하는데
+		// delete[] my_int_arr.m_arr; // private이라 액세스 불가
+
+		// --> 이럴 경우를 대비해서 클래스의 소멸자에 기능 구현
 	}
 }
 

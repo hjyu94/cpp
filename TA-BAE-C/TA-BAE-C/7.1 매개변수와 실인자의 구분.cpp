@@ -37,6 +37,7 @@ void getSinCos(const double degree, double &sin_out, double &cos_out)
 {
 	static const double pi = 3.141592;
 	// static: 한번 정의되면 나중에 또 정의될때는 재정의 되지 않음. 재사용된다.
+	// 함수 밖에서는 pi 변수 사용 불가 (4.2 참고)
 
 	double radians = degree * pi / 180.0;
 
@@ -76,11 +77,12 @@ int main()
 
 	// 참조에 의한 인수 전달의 단점
 	doSomething2(5);
-	// 이처럼 참조변수가 들어가야 할 자리에 리터럴 값이 들어오게 된다면
+	// 이처럼 참조변수가 들어가야 할 자리에 리터럴 상수값이 들어오게 된다면
 	// void doSomething2(int &x)를
-	// void doSomething2(const int &x)나 ...(int x)로 바꾸면 된다
+	// void doSomething2(const int &x)나
+	// void doSomething2(int x)로 바꾸면 된다
 
-	// 이럴 경우가 생길 수 있으므로 매개변수들은 가능하다면
+	// 이럴 경우를 대비해서 매개변수들은 가능하다면
 	// 정의할 때부터 const로 지정해주면 좋다.
 
 	cout << "포인터를 인수로 전달" << endl;

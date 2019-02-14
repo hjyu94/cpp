@@ -21,7 +21,8 @@ int main()
 #include <vector>
 
 void printElement(
-	/*const:습관적으로 사용해주면 좋다*/ vector<int>& arr)
+	/* const:습관적으로 사용해주면 좋다 */ 
+	vector<int>& arr)
 {
 
 }

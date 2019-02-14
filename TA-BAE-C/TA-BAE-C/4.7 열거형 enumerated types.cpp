@@ -27,7 +27,8 @@ int main()
 	Color house(COLOR_RED);
 	Color house2{ COLOR_RED };
 
-	house = ipaint;
+	house = ipaint; // X
+	house = (Color)ipaint; // O
 
 	if (COLOR_RED == COLOR_GREEN)
 	{

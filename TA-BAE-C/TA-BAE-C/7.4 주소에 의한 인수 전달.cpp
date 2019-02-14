@@ -5,7 +5,7 @@ using namespace std;
 // 주소를 복사해서 새로운 종이에 적는 꼴
 void foo(int *ptr)
 {
-	cout << *ptr << "\t" << ptr << "\t" << &ptr << " :In foo() " << endl;
+	cout << *ptr << "\t" << ptr << "\t" << /*이 값!*/ &ptr << " :In foo() " << endl;
 }
 
 int main()
@@ -24,7 +24,7 @@ int main()
 	cout << endl;
 
 	int *ptr = &value;
-	cout << *ptr << "\t" << ptr << "\t" << &ptr << " :In main() " << endl;
+	cout << *ptr << "\t" << ptr << "\t" << /*이 값!*/ &ptr << " :In main() " << endl;
 	foo(ptr);
 
 	// 메인에서의 &ptr과

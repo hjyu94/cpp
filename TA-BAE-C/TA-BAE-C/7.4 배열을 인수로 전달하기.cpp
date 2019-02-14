@@ -11,3 +11,5 @@ void foo(int *arr, int length)
 }
 // 주소를 찾아가서 바꾸기 때문에
 // 값이 바뀐다
+
+// arr[i] = *(arr + i)

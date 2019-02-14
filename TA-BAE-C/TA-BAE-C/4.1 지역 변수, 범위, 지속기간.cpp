@@ -28,6 +28,7 @@ int main()
 	
 	cout << apple << endl; // 1
 
+	// int apple = 888; // X // 재정의 불가능
 	{
 		cout << apple << endl; // 1
 		int apple = 888; // 재정의 가능, 블록 밖으로 넘어가면 사라진다

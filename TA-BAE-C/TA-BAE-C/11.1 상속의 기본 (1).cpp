@@ -1,3 +1,8 @@
+/*
+	오버로딩, 오버라이딩
+	https://memoryfilm.tistory.com/16
+*/
+
 #include <iostream>
 
 using namespace std;
@@ -79,12 +84,14 @@ private:
 
 public:
 	void setValue(const int& i_in, const double& d_in)
+		: m_i(i_in), m_d(d_in) // X 
+							   // 이니셜라이저 사용 불가능, Mother 멤버 변수를 public으로 해도 불가능
 	{
 		// m_i이 private이라서 불가능
 		m_i = i_in;
 		m_d = d_in;
 
-		// 해결법!
+		//### 해결법!
 		Mother::setValue(i_in);
 		m_d = d_in;
 	}
@@ -104,6 +111,7 @@ int main()
 {
 	Daughter me;
 	me.setValue(10, 13.4);
+	me.Mother::setValue(10);
 }
 
 /********************************************************/

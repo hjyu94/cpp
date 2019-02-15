@@ -144,10 +144,37 @@
     <ClCompile Include="11.1 상속의 기본 (1).cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11.1 상속의 기본 (1)_2.cpp">
+    <ClCompile Include="11.1 상속의 기본 %281%29_2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="11.1 상속의 기본 (1)_3.cpp">
+    <ClCompile Include="7.5 다양한 반환 값들(값, 참조, 주소, 구조체, 튜플).cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7.5 다양한 반환 값들(값, 참조, 주소, 구조체, 튜플)_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="7.6 인라인 함수.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.7 this 포인터와 연쇄 호출.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.7 this 포인터와 연쇄 호출_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.8 클래스 코드와 헤더 파일 main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.8 클래스 코드와 헤더 파일.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.9 클래스와 const.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.9 클래스와 const_2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="8.9 클래스와 const_3.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -174,6 +201,9 @@
     </ClInclude>
     <ClInclude Include="1.11.3 헤더파일 만들기.h">
       <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="8.8 클래스 코드와 헤더 파일.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

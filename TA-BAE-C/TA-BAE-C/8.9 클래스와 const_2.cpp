@@ -43,7 +43,7 @@ void print(Something st)
 	cout << "In ftn: " << &st << endl;
 	cout << st.i_m << endl;
 }
-// call by value 값을 복사해서 사용함
+// call by value 값을 @ 복사 @ 해서 사용함
 // Something 클래스의 오브젝트인 st가 새로 생기고
 // 실인자가 복사되서 st에 들어오는건 맞는데
 // 왜 Constructor는 한번만 호출될까?

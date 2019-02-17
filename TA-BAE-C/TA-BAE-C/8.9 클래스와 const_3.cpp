@@ -12,29 +12,28 @@ class Something
 public:
 	string m_value = "default";
 
-	const string& getValue() const
-	/*
-		특징 :
-		1. 메소드 이름이 같아야 한다.
-		2. 리턴형이 같아도 되고 달라도 된다.
-		3. 파라미터 개수가 달라야한다.
-		4. 파라미터 개수가 같을 경우, 자료형이 달라야 한다.
-		(리턴타입은 같더라도 파라매터는 달라야 한다)
-
-		출처 : https ://memoryfilm.tistory.com/16 [린월의 Memory Film]
-	*/
-
-	// 파라매터가 같을때는 원래 오버로딩 안되지만 const의 여부로는 오버로딩이 가능하다.
+	string& getValue() const
 	{
 		cout << "const version" << endl;
 		return m_value;
 	}
+	// sth1.getValue() = "Another string";
+	// 이런 일이 발생할 수 있다.
+
+	// getValue()는 const 함수이므로 멤버 변수 값을 바꿔서는 안되므로
+	// 이런 일이 생기는 것을 방지하고 싶으면
+	// 반환 값으로 string&이 아니라 const string&을 사용해야 한다.
 	
-	/*string& getValue()
+	// const string m_value = "default"; 일 때,
+	// string& str_Ref = m_value;		// X
+	// const string& str_Ref = m_value;	// O
+
+	
+	string& getValue()
 	{
 		cout << "non-const version" << endl;
 		return m_value;
-	}*/
+	}
 };
 
 void main()
@@ -45,3 +44,16 @@ void main()
 	Something sth;
 	sth.getValue()=10;
 }
+
+/*
+오버로딩의 특징 :
+1. 메소드 이름이 같아야 한다.
+2. 리턴형이 같아도 되고 달라도 된다.
+3. 파라미터 개수가 달라야한다.
+4. 파라미터 개수가 같을 경우, 자료형이 달라야 한다.
+(리턴타입은 같더라도 파라매터는 달라야 한다)
+
+출처 : https ://memoryfilm.tistory.com/16 [린월의 Memory Film]
+*/
+
+// 파라매터가 같을때는 원래 오버로딩 안되지만 const의 여부로는 오버로딩이 가능하다.

@@ -27,7 +27,7 @@ int* getValue2(int x)
 
 void main2()
 {
-	int value = *getValue2(5); // 그타마 여기서는 value에 값을 복사해 넣음
+	int value = *getValue2(5); // 그나마 여기서는 value에 값을 복사해 넣음
 	cout << value << endl; // 10
 	cout << value << endl; // 10
 
@@ -53,7 +53,6 @@ void main()
 	int& value = getValue3(5);
 	cout << value << endl; // 10
 	cout << value << endl; // -858993460 // 가비지 출력됨
-
 }
 
 /************************************************************/

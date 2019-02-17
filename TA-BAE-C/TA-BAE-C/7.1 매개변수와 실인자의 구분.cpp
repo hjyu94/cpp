@@ -18,7 +18,7 @@ void doSomething(int x)
 	cout << "In func " << x << ", " << &x << endl;
 } 
 // 새롭게 변수를 만들고 실인자의 값이 매개변수 x로 복사된다.
-
+// 주소를 찍어보면, 실인자로 넘겨준 변수의 주소와 다른 주소가 출력된다.
 
 //#### 참조에 의한 전달
 void doSomething2(int &x)
@@ -26,7 +26,7 @@ void doSomething2(int &x)
 	cout << x << ", " << &x << endl;
 	x = x + 1;
 }
-// 레퍼런스 변수를 이용하기 때문에 주소도 똑같고 복사도 이뤄지지 않는다.
+// 레퍼런스 변수를 이용하기 때문에 주소도 똑같이 출력되며 복사도 이뤄지지 않는다.
 
 
 // degree: 값에 의한 전달, 값이 바뀌어도 함수를 나갈때 사라짐. 입력으로 쓰인 것
@@ -35,6 +35,7 @@ void doSomething2(int &x)
 
 // const double degree: 매개변수가 const인 경우?
 //	: 함수 내에서 해당 변수의 값을 바꾸지 않겠다.
+
 // cf) 함수가 const인 경우?
 //	: 클래스에서 멤버 함수를 const로 만들 수 있는데
 //	: 해당 클래스의 멤버 변수 값을 바꾸지 않겠다는 표시이다.
@@ -42,6 +43,7 @@ void getSinCos(const double degree, double &sin_out, double &cos_out)
 {
 	static const double pi = 3.141592;
 	// static: 한번 정의되면 나중에 또 정의될때는 재정의 되지 않음. 재사용된다.
+	// 선언과 동시에 초기화가 이뤄져야 한다.
 	// 함수 밖에서는 pi 변수 사용 불가 (4.2 참고)
 
 	double radians = degree * pi / 180.0;
@@ -89,8 +91,8 @@ int main()
 	// void doSomething2(const int &x)나
 	// void doSomething2(int x)로 바꾸면 된다
 
-	// 이럴 경우를 대비해서 매개변수들은 가능하다면
-	// 정의할 때부터 const로 지정해주면 좋다.
+	// 리터럴 상수나, 표현식을 실인자로 넘겨줄 경우를 대비해서 
+	// 매개변수들은 가능하다면 정의할 때부터 const로 지정해주면 좋다.
 
 	cout << "포인터를 인수로 전달" << endl;
 	int z = 5;

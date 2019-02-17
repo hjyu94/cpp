@@ -18,7 +18,8 @@ int main()
 	// foo(5); // 리터럴은 바로 쓸 수 없음
 	/* 
 		void foo(int &ptr){...}
-		이 경우였다면 void foo(const int &ptr)로
+		매개변수가 포인터가 아니라 참조변수였다면
+		void foo(const int &ptr)와 같이
 		const를 추가해주면 리터럴도 넘겨줄 수 있다.
 	*/
 	cout << endl;

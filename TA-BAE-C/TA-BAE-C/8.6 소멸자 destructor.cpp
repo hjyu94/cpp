@@ -69,6 +69,8 @@ public:
 	~IntArray()
 	{
 		if (m_arr != nullptr) delete[] m_arr;
+		// 배열 포인터 삭제: delete[]
+		// 일반 포인터 삭제: delete
 	}
 
 	int getLength() const { return m_length; } // #2

@@ -11,7 +11,8 @@ int main()
 	// int array[length]; // X
 
 	int *array = new int[length] {1, 2, 3};
-	// 만약 3보다 작은 값은 입력받게 되면 런타임 에러 발생
+	// int *array = new int[] {1, 2, 3}; // X
+	// 만약 legnth에 3보다 작은 값은 입력받게 되면 런타임 에러 발생
 	// os한테 메모리를 충분히 받지 못했는데 메모리를 더 쓰려고 하니까 문제!
 
 	for (int i = 0; i < length; ++i) cout << array[i] << endl;
@@ -20,6 +21,7 @@ int main()
 
 	/*
 		- 배열이 아닌 변수를 반납할 때
+		- delete (반납할 변수의 주소값)
 
 		int* iValue = new int{1};
 		delete iValue;

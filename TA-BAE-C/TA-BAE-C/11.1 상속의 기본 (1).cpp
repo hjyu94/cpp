@@ -30,12 +30,12 @@ private:
 	double m_d;
 
 public:
-	void setValue(const double& d_in)
+	void setValue(const double& d_in) // 오버라이딩
 	{
 		m_d = d_in;
 	}
 
-	int getValue() const
+	int getValue() const // 오버라이딩
 	{
 		return m_d;
 	}
@@ -54,11 +54,11 @@ int main()
 	// 만약 Daughter에서 오버라이딩 된 함수가 아니라
 	// 부모의 함수를 호출하고 싶으면?
 	me.Mother::getValue();
+	me.Mother::setValue(10);
 }
 
-// 그럼 me를 이용해서 m_i에 값을 할당하고 싶으면?
-
 /************************************************************/
+// 다른 방법은 없을까
 
 class Mother
 {
@@ -87,7 +87,7 @@ public:
 		: m_i(i_in), m_d(d_in) // X 
 							   // 이니셜라이저 사용 불가능, Mother 멤버 변수를 public으로 해도 불가능
 	{
-		// m_i이 private이라서 불가능
+		// 아래는 m_i이 private이라서 불가능
 		m_i = i_in;
 		m_d = d_in;
 
@@ -110,6 +110,7 @@ public:
 int main()
 {
 	Daughter me;
+	me.setValue(13.4);
 	me.setValue(10, 13.4);
 	me.Mother::setValue(10);
 }

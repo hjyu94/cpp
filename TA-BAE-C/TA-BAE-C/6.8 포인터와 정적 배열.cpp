@@ -27,8 +27,8 @@ int main()
 	int array[5] = { 1,2,3,4,5 };
 	int *ptr = array;
 
-	cout << array << endl;		// 같은 주소 출력
-	cout << &array[0] << endl;	// 같은 주소 출력
+	cout << array << endl;		// 주소가 출력됨
+	cout << &array[0] << endl;	// 주소가 출력됨 (같은 값)
 
 	cout << sizeof(array) << endl;		// 20 (int 5개) 
 	printArray(array);					// 8 (x64에서 포인터 변수는 무조건 8byte)

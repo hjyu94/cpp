@@ -41,7 +41,8 @@ public:
 
 	// 해결책1) Mother 클래스의 기본생성자 만들어주기
 	// 해결책2) Daughter 생성자 호출할 때 Mother의 생성자 호출해주기
-	{ // X
+
+	{ // 빨간줄 있음
 		Mother::setValue(i_in);
 		m_d = d_in;
 	}

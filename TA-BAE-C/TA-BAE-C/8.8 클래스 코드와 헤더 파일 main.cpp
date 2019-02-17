@@ -1,8 +1,8 @@
 #include "8.8 클래스 코드와 헤더 파일.h"
-using namespace std;
 
 int main()
 {
+	using namespace std;
 	Calc cal(10);
 	cal.add(1).add(2).add(3).print(); // chaining member 
 

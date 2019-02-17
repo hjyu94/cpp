@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	srand(5323); // 고정된 씨드값을 사용. 실행시마다 같은 값들이 계속 나오게 됨
+	srand(5323); // 씨드값으로 5323을 을 사용. 실행시마다 같은 값들이 계속 나오게 됨
 	srand(static_cast<unsigned int>(time(0)));
 	// 현재 cpu clock을 씨드로 사용하므로 실행할 때마다 다른 값들이 나옴
 

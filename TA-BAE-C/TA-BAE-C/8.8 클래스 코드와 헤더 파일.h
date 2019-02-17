@@ -1,54 +1,54 @@
-#pragma once
-
-#include <iostream>
-
-using namespace std; 
-// include하는 파일들에 전부 영향을 끼쳐버려서 여기에 안 쓰는게 좋음
-
-class Calc
-{
-	//  using namespace std; // X
-
-private:
-	//	using namespace std; // X
-	int m_value;
-
-public:
-	//	using namespace std; // X
-	Calc(int init_value)
-		: m_value(init_value)
-	{}
-
-	Calc& add(int value) 
-	{
-		m_value += value; 
-		return *this; 
-	}
-	
-	Calc& add1(int value) 
-	{ 
-		m_value += value; 
-		return *this; 
-	}
-	
-	Calc& add2(int value) 
-	{ 
-		m_value += value; 
-		return *this; 
-	}
-
-	Calc& add3(int value) 
-	{ 
-		m_value += value; 
-		return *this; 
-	}
-
-	void print()
-	{
-		using namespace std;
-		cout << m_value << endl;
-	}
-};
+//#pragma once
+//
+//#include <iostream>
+//
+//using namespace std; 
+//// include하는 파일들에 전부 영향을 끼쳐버려서 여기에 안 쓰는게 좋음
+//
+//class Calc
+//{
+//	//  using namespace std; // X
+//
+//private:
+//	//	using namespace std; // X
+//	int m_value;
+//
+//public:
+//	//	using namespace std; // X
+//	Calc(int init_value)
+//		: m_value(init_value)
+//	{}
+//
+//	Calc& add(int value) 
+//	{
+//		m_value += value; 
+//		return *this; 
+//	}
+//	
+//	Calc& add1(int value) 
+//	{ 
+//		m_value += value; 
+//		return *this; 
+//	}
+//	
+//	Calc& add2(int value) 
+//	{ 
+//		m_value += value; 
+//		return *this; 
+//	}
+//
+//	Calc& add3(int value) 
+//	{ 
+//		m_value += value; 
+//		return *this; 
+//	}
+//
+//	void print()
+//	{
+//		using namespace std;
+//		cout << m_value << endl;
+//	}
+//};
 
 /***********************************************/
 
@@ -72,6 +72,7 @@ public:
 	{}
 
 	// 함수명 위에서 우클릭 - 빠른 작업 및 리팩터링 - 선언 위치 이동 - Ctrl + S (저장)
+	// 왜 그런진 모르겠는데, 자동으로 붙는 inline 지워줘야 링킹 에러 없어짐
 	Calc& add(int value);
 	Calc& add1(int value);
 	Calc& add2(int value);

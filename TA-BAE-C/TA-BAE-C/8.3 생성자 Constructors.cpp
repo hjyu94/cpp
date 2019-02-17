@@ -7,7 +7,7 @@ class Fraction
 private:
 	int m_numerator;
 	int m_denominator;
-	// 초기화해주지 않으면 가비지 값이 들어있다.
+	// 초기화해주지 않고 출력할 시 런타임 에러 발생한다.
 
 public:
 	void print()
@@ -18,7 +18,7 @@ public:
 
 int main()
 {
-	Fraction frac; // 기본생성자만 있을때 이런식으로 객체 생성 가능
+	Fraction frac; // 기본생성자만 있을때 괄호 없이 객체 생성 가능
 	Fraction frac(); // OK
 
 	frac.m_numerator = 0;
@@ -47,6 +47,8 @@ private:
 	// 초기화해주지 않고 출력해보면 런타임 에러 발생
 
 public:
+	// Fraction2() {} // 기본 생성자
+
 	Fraction2(int x) 
 	// 생성자가 호출될 때 값을 초기화 해주는 방법이 있다.
 
@@ -66,6 +68,6 @@ public:
 
 void main2()
 {
-	Fraction2 frac; // Fraction2이 기본생성자만을 갖고 있을때만 가능
+	Fraction2 frac; // 기본 생성자가 있을 때 이와 같이 오브젝트 생성 가능.
 	Fraction2 frac(1);
 }

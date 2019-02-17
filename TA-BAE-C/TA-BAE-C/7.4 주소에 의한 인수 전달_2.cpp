@@ -10,8 +10,8 @@ void getSinCos(const double degree, double *sin_out, double *cos_out)
 
 	double radians = degree * pi / 180.0;
 
-	/* de-referencing */       *sin_out = std::sin(radians);
-	/* 포인터가 가리키는 실제 값*/ *cos_out = std::cos(radians);
+	/* de-referencing */			*sin_out = std::sin(radians);
+	/* 포인터가 가리키는 실제 값*/	*cos_out = std::cos(radians);
 	// 이렇게 하면 포인터로 인수를 전달 받았어도 값을 바꿔줄 수 있다.
 }
 

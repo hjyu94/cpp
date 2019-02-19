@@ -6,6 +6,7 @@ class Something
 {
 public:
 	int m_value = 1;
+
 	// static int s_value = 1; // X
 	static int s_value;		// O 
 	// 중복 선언 문제
@@ -41,7 +42,7 @@ void main()
 {
 	cout << &Something::s_value << " " << Something::s_value << endl;
 	// 정적 멤버 변수는 인스턴스가 없을 때도 주소를 출력해 볼 수 있다.
-	// 단 int Something::s_value = 1; 처럼 값을 주지 않고
+	// 단 값을 주지 않고(int Something::s_value = 1;)
 	// 출력하면 링킹 에러가 발생한다.
 
 	Something st1, st2;

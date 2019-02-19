@@ -12,9 +12,9 @@ public:
 	static int static_fcn()
 	{
 		cout << m_value << endl;	// X
-		return this->s_value;	// X
+		return this->s_value;		// X
 	}
-	// static 멤버 함수에서는 this 포인터를 사용할 수 없다.
+	// # static 멤버 함수에서는 this 포인터를 사용할 수 없다. #
 	// this를 이용해서 얻어와야 하는 멤버 변수도 사용할 수 없다.
 
 	int non_static_fcn()
@@ -30,11 +30,12 @@ void main()
 {
 	Something sth;
 
-	int(Something::*fcn_ptr)() = sth.non_static_fcn; // X
+	// [선언하기]
+	int(Something::*non_static_fptr)() = sth.non_static_fcn; // X
 	// error C3867 : 'Something::non_static_fcn' 
 	// : non - standard syntax; use '&' to create a pointer to member
 
-	int(Something::*fcn_ptr)() = &(sth.non_static_fcn); // X
+	int(Something::*non_static_fptr)() = &(sth.non_static_fcn); // X
 	// Something의 멤버 함수 포인터를 선언하겠다.
 	// error C2276 : '&' 
 	// : illegal operation on bound member function expression
@@ -44,6 +45,7 @@ void main()
 	// 매개변수로 인스턴스의 주소를 넘겨주는 방식을 사용함.
 	// temp는 sth이 아니라 Something에 속해있는 함수에요 라는 의미를 써야 함.
 	
+	// [호출하기]
 	cout << (sth.*non_static_fptr)() << endl << endl;
 	// sth를 써주지 않으면 작동하지 않는다.
 	// non static 멤버 함수는 this 포인터에 종속된 형태로 작동하기 때문에

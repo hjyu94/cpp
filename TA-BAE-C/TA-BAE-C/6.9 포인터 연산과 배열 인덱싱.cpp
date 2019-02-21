@@ -25,7 +25,8 @@ void main1()
 
 void main()
 {
-	int array[]{1, 2, 3, 4, 5};
+	int array[]{1, 2, 3, 4, 5}; // O
+	// == int array[] = {1,2,3,4,5};
 
 	// cf) 
 	// int* arr = new int[]{ 1,2,3,4,5 }; // X

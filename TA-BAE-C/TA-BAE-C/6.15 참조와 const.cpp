@@ -19,8 +19,8 @@ int main()
 	{
 		// #2 원래 변수만 const인 경우
 		// const가 아닌 레퍼런스 변수로 가리킬 수 없다.
-		const int x = 5;
-		int& ref_x = x; // X
+		const int x = 5; // O
+		int& ref_x = x;  // X
 	}
 
 	{

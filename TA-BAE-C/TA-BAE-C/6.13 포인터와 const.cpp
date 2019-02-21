@@ -33,6 +33,7 @@ int main()
 	int			value2 = 15;
 	const int*	c_ptr2 = &value2;
 	
+	value2 = 30; // O
 	*c_ptr2 = 30; // X
 
 	// 해당 포인터를 이용해서 값을 바꾸지 않겠다는 의지 표현
@@ -64,7 +65,7 @@ int main()
 	// 포인터가 가리키는 값을 바꿀수도 출력할수도 있지만
 	// 포인터의 값을 바꿀 순 없다. (다른 주소를 담을 수 없다)
 
-	int *const ptr; // X // 포인터 자체가 상수이므로 초기화가 꼭 필요함
+	int* const ptr; // X // 포인터 자체가 상수이므로 초기화가 꼭 필요함
 
 	/******************************************************/
 	
@@ -80,6 +81,7 @@ int main()
 
 // 총 3가지 있는 것!
 int value = 5;
+
 const int* ptr1 = &value;
 int* const ptr2 = &value;
 const int* const ptr3 = &value;

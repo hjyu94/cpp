@@ -6,7 +6,7 @@ enum Color
 	COLOR_BLACK = -3,
 	COLOR_RED = 10,
 	COLOR_GREEN = 10,
-	// BLUE, // x
+	BLUE,
 };
 
 enum Feeling

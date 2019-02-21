@@ -100,7 +100,11 @@ int main()
 
 #include <iostream>
 
-int a = 1; // 전역변수. 다른 cpp 파일에서 extern으로 선언해주면 사용 가능
+int a = 1; // 전역변수. 
+// 여기서 선언한 전역변수를 다른 cpp 파일에서 쓰고 싶다면?
+
+// [another.cpp]
+// extern int a; // extern으로 선언해주면 사용 가능
 
 void doSomething()
 {
@@ -138,24 +142,24 @@ static int g_a = 1;
 
 int main()
 {
-	int a = 10;
-
-	return 0;
+	// ...
 }
 
 /********************************************************/
 
 // [외부연결]
 // test.cpp 의 doSomething()를 사용하고 싶은 경우
+
 // 1) cpp 파일 직접 인클루드(가급적 사용 X)
 // 2) 전방선언
 
 #include <iostream>
-// #include "4.2 전역 변수, 정적 변수, 내부 연결, 외부 연결2.cpp"
-#include "4.2 My Constants.h"
+// #include "4.2.1 전역 변수, 정적 변수, 내부 연결, 외부 연결2.cpp"
+#include "4.2.1 My Constants.h"
 
 // forward declaration
 /* extern (생략되어 있음) */ void doSomething();
+
 // 어딘가 doSomething()의 정의가 존재하니까
 // 링킹할때 갖다 붙이세요
 // 실행 시에는 링킹할때 붙인 기능을 수행하세요
@@ -174,11 +178,11 @@ int main()
 	// extern으로 표시해서 다른 파일에 있다고 알려줬음
 	// Constants::pi 의 값과 주소를 출력하는 함수
 
-	// (4.2 MyCosntants.cpp가 없고 4.2 MyConstants.h만 있는 경우에) 
+	// [헤더파일과 cpp 파일을 분리하지 않고 헤더에 선언과 정의를 모두 한 경우] 
 	// test.cpp 와 다른 변수의 메모리 공간을 사용하게 된다.
 	// 상수를 1억개 사용할 때 여러 cpp 파일에서 상수 헤더파일을 인클루드 하면
 	// 같은 변수더라도 다른 메모리를 사용하는 상수가 1억개나 생김 -> 메모리 낭비 주의해야 함
-	// 4.2 MyConstants.cpp 를 만들어줘서 이를 해결함.
+	// 4.2 MyConstants.cpp 를 따로 만들어줘서 이를 해결함.
 
 	cout << a << endl; // 123
 	// test.cpp 파일에서 extern int a = 123; 했음

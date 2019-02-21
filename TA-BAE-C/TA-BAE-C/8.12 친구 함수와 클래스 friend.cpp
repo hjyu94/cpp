@@ -31,7 +31,6 @@ void doSomething(A& a, B& b)
 // [ 전방선언 ]
 // 밑에 어딘가 B의 정의가 있으니
 // B에 관한 모르는 내용이 있으면 더 밑에를 읽어보라
-
 class B2;
 
 class A2
@@ -40,7 +39,7 @@ private:
 	int m_value = 1;
 
 	friend void doSomething(A2& a, B2& b); 
-	// 전방선언이 없으면 여기서 B가 뭔지 모름
+	// 전방선언이 없으면 여기서 B2가 뭔지 모름
 };
 
 class B2

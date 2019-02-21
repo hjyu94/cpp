@@ -12,7 +12,7 @@ int main()
 		// 다른 값을 가리킬 수 없다
 		int			x = 5, y = 1;
 		const int&	ref_x = x;
-		x = 10;		// O
+		x = y;		// O
 		ref_x = y;	// X
 	}
 

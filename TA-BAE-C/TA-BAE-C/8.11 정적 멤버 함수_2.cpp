@@ -55,7 +55,7 @@ void main()
 
 	/*******************************************************************/
 
-	int(Something::*static_fptr)() = &Something::static_fcn; // X
+	// int(Something::*static_fptr)() = &Something::static_fcn; // X
 	// error C2440 : 'initializing' 
 	// : cannot convert from 'int (__cdecl *)(void)' to 'int (__cdecl Something::* )(void)'
 

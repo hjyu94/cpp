@@ -35,8 +35,9 @@ int main1()
 	int& ref = x;
 
 	const int y = 8;
-	const int& ref = y; // O
 	int& ref = y; // X
+
+	const int& ref = y; // O
 	// ref를 이용해서 값을 바꾸면 const인 y값도 바뀔 수 있으므로
 }
 

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "4.2 My Constants.h"
+#include "4.2.1 My Constants.h"
 
 extern int a = 123; // 초기화를 시켜줘야 메모리가 할당된다.
 

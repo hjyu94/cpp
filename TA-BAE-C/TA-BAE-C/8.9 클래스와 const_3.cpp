@@ -12,7 +12,8 @@ class Something
 public:
 	string m_value = "default";
 
-	string& getValue() const
+	/*const*/ string& getValue() const
+		// 앞의 const 주석 처리하면 에러
 	{
 		cout << "const version" << endl;
 		return m_value;

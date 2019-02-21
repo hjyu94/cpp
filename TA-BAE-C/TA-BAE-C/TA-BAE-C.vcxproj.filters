@@ -1,287 +1,97 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
-    </Filter>
+    <ClCompile Include="1.11 헤더파일 만들기.cpp" />
+    <ClCompile Include="1.11 헤더파일 만들기2.cpp" />
+    <ClCompile Include="1.11.2 헤더파일 만들기.cpp" />
+    <ClCompile Include="1.11.3 헤더파일 만들기.cpp" />
+    <ClCompile Include="1.11.3 헤더파일 만들기2.cpp" />
+    <ClCompile Include="11.1 상속의 기본 (1).cpp" />
+    <ClCompile Include="11.1 상속의 기본 %281%29_2.cpp" />
+    <ClCompile Include="11.3 상속과 생성자.cpp" />
+    <ClCompile Include="11.3 유도된 클래스들의 생성 순서.cpp" />
+    <ClCompile Include="11.3 유도된 클래스들의 생성 순서_2.cpp" />
+    <ClCompile Include="11.5 상속과 접근 지정자.cpp" />
+    <ClCompile Include="11.7 상속받은 함수를 오버라이딩 하기.cpp" />
+    <ClCompile Include="11.8 상속 받은 함수를 감추기.cpp" />
+    <ClCompile Include="11.9 다중 상속.cpp" />
+    <ClCompile Include="12.1 다형성의 기본 개념.cpp" />
+    <ClCompile Include="12.1 다형성의 기본 개념_2.cpp" />
+    <ClCompile Include="12.2 가상 함수와 다형성.cpp" />
+    <ClCompile Include="12.2 가상 함수와 다형성_2.cpp" />
+    <ClCompile Include="4.1 지역 변수, 범위, 지속기간.cpp" />
+    <ClCompile Include="4.10 구조체 struct.cpp" />
+    <ClCompile Include="4.2.1 전역 변수, 정적 변수, 내부 연결, 외부 연결2.cpp" />
+    <ClCompile Include="4.2.1 전역 변수, 정적 변수, 내부 연결, 외부 연결.cpp" />
+    <ClCompile Include="4.2.2 another.cpp" />
+    <ClCompile Include="4.2.2 main.cpp" />
+    <ClCompile Include="4.2.3 another.cpp" />
+    <ClCompile Include="4.2.3 Header.cpp" />
+    <ClCompile Include="4.2.3 main.cpp" />
+    <ClCompile Include="4.9 자료형에게 가명 붙여주기.cpp" />
+    <ClCompile Include="5.9 난수 만들기 random numbers.cpp" />
+    <ClCompile Include="6.10 C언어 스타일의 문자열 심볼릭 상수.cpp" />
+    <ClCompile Include="6.12 동적 할당 배열.cpp" />
+    <ClCompile Include="6.13 포인터와 const.cpp" />
+    <ClCompile Include="6.14 참조 변수 reference variable.cpp" />
+    <ClCompile Include="6.15 참조와 const.cpp" />
+    <ClCompile Include="6.17 C++11 For-each 반복문.cpp" />
+    <ClCompile Include="6.7 포인터의 기본적인 사용법.cpp" />
+    <ClCompile Include="6.7a 널 포인터 Null Pointer.cpp" />
+    <ClCompile Include="6.8 포인터와 정적 배열.cpp" />
+    <ClCompile Include="6.9 포인터 연산과 배열 인덱싱.cpp" />
+    <ClCompile Include="7.1 매개변수와 실인자의 구분.cpp" />
+    <ClCompile Include="7.3 배열을 인수로 전달하기.cpp" />
+    <ClCompile Include="7.4 배열을 인수로 전달하기.cpp" />
+    <ClCompile Include="7.4 주소에 의한 인수 전달.cpp" />
+    <ClCompile Include="7.4 주소에 의한 인수 전달_2.cpp" />
+    <ClCompile Include="7.5 다양한 반환 값들(값, 참조, 주소, 구조체, 튜플).cpp" />
+    <ClCompile Include="7.5 다양한 반환 값들(값, 참조, 주소, 구조체, 튜플)_2.cpp" />
+    <ClCompile Include="7.6 인라인 함수.cpp" />
+    <ClCompile Include="7.9 함수 포인터.cpp" />
+    <ClCompile Include="7.9a 함수 포인터.cpp" />
+    <ClCompile Include="7.9b 함수 포인터.cpp" />
+    <ClCompile Include="8.10 정적 멤버 변수.cpp" />
+    <ClCompile Include="8.11 정적 멤버 함수.cpp" />
+    <ClCompile Include="8.11 정적 멤버 함수_2.cpp" />
+    <ClCompile Include="8.11 정적 멤버 함수_3.cpp" />
+    <ClCompile Include="8.12 친구 함수와 클래스 friend.cpp" />
+    <ClCompile Include="8.12 친구 함수와 클래스 friend_2.cpp" />
+    <ClCompile Include="8.12 친구 함수와 클래스 friend_3.cpp" />
+    <ClCompile Include="8.13 익명 객체.cpp" />
+    <ClCompile Include="8.13 익명 객체_2.cpp" />
+    <ClCompile Include="8.3 생성자 Constructors.cpp" />
+    <ClCompile Include="8.3 생성자 Constructors2.cpp" />
+    <ClCompile Include="8.4 생성자 멤버 초기화 목록.cpp" />
+    <ClCompile Include="8.5 위임 생성자.cpp" />
+    <ClCompile Include="8.6 소멸자 destructor.cpp" />
+    <ClCompile Include="8.7 this 포인터와 연쇄 호출.cpp" />
+    <ClCompile Include="8.7 this 포인터와 연쇄 호출_2.cpp" />
+    <ClCompile Include="8.8 클래스 코드와 헤더 파일 main.cpp" />
+    <ClCompile Include="8.8 클래스 코드와 헤더 파일.cpp" />
+    <ClCompile Include="8.9 클래스와 const.cpp" />
+    <ClCompile Include="8.9 클래스와 const_2.cpp" />
+    <ClCompile Include="8.9 클래스와 const_3.cpp" />
+    <ClCompile Include="8_1 객체지향 프로그래밍과 클래스.cpp" />
+    <ClCompile Include="8_2 캡슐화, 접근 지정자, 접근 함수.cpp" />
+    <ClCompile Include="9.1 산술 연산자 오버로딩 하기.cpp" />
+    <ClCompile Include="9.1 산술 연산자 오버로딩 하기_2.cpp" />
+    <ClCompile Include="9.2 입출력 연산자 오버로딩 하기.cpp" />
+    <ClCompile Include="9.3 단항 연산자 오버로딩 하기.cpp" />
+    <ClCompile Include="소스.cpp" />
+    <ClCompile Include="12.3 override, final, 공변 반환값.cpp" />
+    <ClCompile Include="12.3 override, final, 공변 반환값_2.cpp" />
+    <ClCompile Include="12.4 가상 소멸자.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4.1 지역 변수, 범위, 지속기간.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 My Cosntatns.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 전역 변수, 정적 변수, 내부 연결, 외부 연결.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="5.9 난수 만들기 random numbers.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.1 매개변수와 실인자의 구분.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.3 배열을 인수로 전달하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.4 배열을 인수로 전달하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.4 주소에 의한 인수 전달.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.4 주소에 의한 인수 전달_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8_1 객체지향 프로그래밍과 클래스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8_2 캡슐화, 접근 지정자, 접근 함수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="소스.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.9 자료형에게 가명 붙여주기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.10 구조체 struct.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.7 포인터의 기본적인 사용법.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.7a 널 포인터 Null Pointer.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.8 포인터와 정적 배열.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.9 포인터 연산과 배열 인덱싱.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.10 C언어 스타일의 문자열 심볼릭 상수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.3 생성자 Constructors.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.3 생성자 Constructors2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.4 생성자 멤버 초기화 목록.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.5 위임 생성자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.6 소멸자 destructor.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.12 동적 할당 배열.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.13 포인터와 const.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.14 참조 변수 reference variable.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 외부연결 test1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 외부연결 test2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 전역 변수, 정적 변수, 내부 연결, 외부 연결2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 헤더파일을 이용한 외부연결1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 헤더파일을 이용한 외부연결2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 외부연결시 모두 복사되는 문제 해결하기1.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 외부연결시 모두 복사되는 문제 해결하기2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="4.2 외부연결시 모두 복사되는 문제 해결하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1.11 헤더파일 만들기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1.11 헤더파일 만들기2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1.11.2 헤더파일 만들기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1.11.3 헤더파일 만들기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="1.11.3 헤더파일 만들기2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.15 참조와 const.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.17 C++11 For-each 반복문.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.1 상속의 기본 (1).cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.1 상속의 기본 %281%29_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.5 다양한 반환 값들(값, 참조, 주소, 구조체, 튜플).cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.5 다양한 반환 값들(값, 참조, 주소, 구조체, 튜플)_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.6 인라인 함수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.7 this 포인터와 연쇄 호출.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.7 this 포인터와 연쇄 호출_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.8 클래스 코드와 헤더 파일 main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.8 클래스 코드와 헤더 파일.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.9 클래스와 const.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.9 클래스와 const_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.9 클래스와 const_3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="6.15 참조와 const_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="7.9 함수 포인터.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.10 정적 멤버 변수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.11 정적 멤버 함수.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.11 정적 멤버 함수_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.11 정적 멤버 함수_3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.12 친구 함수와 클래스 friend.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.12 친구 함수와 클래스 friend_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.12 친구 함수와 클래스 friend_3.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.13 익명 객체.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="8.13 익명 객체_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9.1 산술 연산자 오버로딩 하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9.1 산술 연산자 오버로딩 하기_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.3 유도된 클래스들의 생성 순서.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.3 유도된 클래스들의 생성 순서_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.5 상속과 접근 지정자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.3 상속과 생성자.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9.2 입출력 연산자 오버로딩 하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="9.3 단항 연산자 오버로딩 하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.7 상속받은 함수를 오버라이딩 하기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.8 상속 받은 함수를 감추기.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="11.9 다중 상속.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="12.1 다형성의 기본 개념.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="12.1 다형성의 기본 개념_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="12.2 가상 함수와 다형성.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="12.2 가상 함수와 다형성_2.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+    <ClInclude Include="1.11.2 헤더파일 만들기2.h" />
+    <ClInclude Include="1.11.3 헤더파일 만들기.h" />
+    <ClInclude Include="4.2.2 Header.h" />
+    <ClInclude Include="4.2.3 Header.h" />
+    <ClInclude Include="8.8 클래스 코드와 헤더 파일.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="4.7 열거형 enumerated types.cpp">
-      <Filter>소스 파일</Filter>
-    </None>
-    <None Include="4.8 영역 제한 열거형 %28열거형 클래스%29.cpp">
-      <Filter>소스 파일</Filter>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="4.2 My Constants.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="4.2 헤더파일을 이용한 외부연결3.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="4.2 외부연결시 모두 복사되는 문제 해결하기.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="1.11.2 헤더파일 만들기2.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="1.11.3 헤더파일 만들기.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="8.8 클래스 코드와 헤더 파일.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
+    <None Include="4.7 열거형 enumerated types.cpp" />
+    <None Include="4.8 영역 제한 열거형 %28열거형 클래스%29.cpp" />
   </ItemGroup>
 </Project>

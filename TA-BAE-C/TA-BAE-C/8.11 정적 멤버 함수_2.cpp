@@ -30,6 +30,11 @@ void main()
 {
 	Something sth;
 
+	int(Something::*non_static_fptr)()	= &Something::non_static_fcn; // O
+	int(*static_fptr)()					= &Something::static_fcn; // O
+
+	/*******************************************************************/
+
 	// [선언하기]
 	int(Something::*non_static_fptr)() = sth.non_static_fcn; // X
 	// error C3867 : 'Something::non_static_fcn' 

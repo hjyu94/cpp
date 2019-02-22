@@ -10,8 +10,8 @@ char* getName()
 int main()
 {
 	// char name[] = "Jack Jack";
-	char *name = "Jack Jack";
-	const char *name2 = "Jack Jack";
+	char*		name = "Jack Jack";
+	const char*	name2 = "Jack Jack";
 	name2 = "Another"; // O
 
 	cout << (uintptr_t)name << name << endl;		// 14322480 Jack Jack

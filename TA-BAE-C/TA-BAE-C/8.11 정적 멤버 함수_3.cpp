@@ -19,7 +19,7 @@ int Something::s_value = 1;
 // static 멤버 변수를 사용하는 함수는 static 멤버 함수여야 한다.
 // 생성자가 static이어야 static 멤버 변수에 값을 넣어줄 수 있는데
 // 생성자는 static으로 만들 수 없다.
-// ---> ??? non static 멤버 함수에서 static 멤버 변수에 값 넣어줄 수 있는데...?
+// ---> ??? non static 멤버 함수에서 static 멤버 변수에 값 변경해줄 수 있는데...?
 
 /**************************************************************/
 
@@ -42,7 +42,7 @@ public:
 	{}*/
 };
 int Another::s_value = 1;
-Another::_init Another::s_initializer;
+Another::_init Another::s_initializer; // ??????
 
 // 얘가 만들어지면서 inner 클래스의 생성자가 초기화되고
 // inner 클래스의 생성자에서 s_value 가 초기화 된다.

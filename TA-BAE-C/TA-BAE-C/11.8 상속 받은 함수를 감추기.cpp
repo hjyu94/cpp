@@ -51,6 +51,7 @@ public:
 
 private:
 	// Base의 print 함수를 사용하지 않게 하는 방법
+
 	/* 1 */
 	using Base::print/*()*/; 
 	// Derived2에서는 print를 private으로 설정함

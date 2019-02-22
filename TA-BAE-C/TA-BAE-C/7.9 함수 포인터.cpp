@@ -15,7 +15,7 @@ int goo() { return 10; }
 
 void main1()
 {
-	cout << func << endl;
+	cout << goo << endl; // 함수 주소가 리턴됨
 
 	/*
 		(함수 리턴 타입) (* (변수 이름)) (함수 파라매터 타입); // 선언

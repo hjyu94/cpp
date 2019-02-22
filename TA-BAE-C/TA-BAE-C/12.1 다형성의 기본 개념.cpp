@@ -47,7 +47,7 @@ void main()
 	Cat cat("my cat");
 	Dog dog("my dog");
 
-	animal.speak();
+	animal.speak(); // my animal ???
 	cat.speak(); // my cat Meow
 	dog.speak(); // my dog Woof
 

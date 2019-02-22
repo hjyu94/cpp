@@ -1,3 +1,9 @@
+// memory: data / code / heap / stack
+
+// data: 전역 변수, static 변수
+// heap: 동적 할당된 변수
+// stack: 지역 변수
+
 #include <iostream>
 
 using namespace std;
@@ -9,7 +15,7 @@ public:
 
 	// static int s_value = 1; // X
 	static int s_value;		// O 
-	// 중복 선언 문제
+	// 중복 선언(초기화) 문제
 	// static 같은 변수들은 여러번 선언하면 에러가 난다.
 
 	// 따라서 헤더파일로 따로 만드는 경우는
@@ -27,7 +33,7 @@ public:
 
 // const int Something::s_c_value = 999; // X
 // const 변수는 선언과 동시에 초기화를 해주어야 함.
-// 따라서 클래스 내부에서 선언할때 초기화 했음. 나중에 값 바꿀 수 없음.
+// const 변수는 나중에 값 바꿀 수 없음.
 
 void main1()
 {

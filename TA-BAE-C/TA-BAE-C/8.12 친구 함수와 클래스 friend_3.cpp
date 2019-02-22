@@ -13,7 +13,7 @@ private:
 	// B는 내 친구니 private 변수를 넘겨주어도 괜찮다는 표현
 	// 나의 모든 private을 다 보여주기는 껄끄럽다면
 
-	// B::doSomething 에게만 보여줄 수도 있다.
+	// B::doSomething 에게만 한정해서 보여줄 수도 있다.
 	friend void B::doSomething(A& a);
 	// 여기서 문제 생김!
 	// class B가 있다는 건 알겠는데

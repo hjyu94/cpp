@@ -8,10 +8,11 @@ int main()
 {
 	int length;
 	cin >> length;
-	// int array[length]; // X
+	// int array[length]; // X // 컴파일 타임에 length 값이 정해지지 않아서 에러
 
 	int *array = new int[length] {1, 2, 3};
 	// int *array = new int[] {1, 2, 3}; // X
+
 	// 만약 legnth에 3보다 작은 값은 입력받게 되면 런타임 에러 발생
 	// os한테 메모리를 충분히 받지 못했는데 메모리를 더 쓰려고 하니까 문제!
 
@@ -38,7 +39,6 @@ int main()
 	// 에러: new 식에서는 배열 크기를 지정해야 합니다.
 	// 동적 배열에서는 초기화를 해줬으면 [] 안에 개수 꼭 지정해줘야 함
 
-	
 	int *array2 = new int[3]{ 1,2,3,4,5 }; // X // 4, 5 는 넣을 자리가 없음
 	int *array3 = new int[8]{ 1,2,3,4,5 }; // O
 }

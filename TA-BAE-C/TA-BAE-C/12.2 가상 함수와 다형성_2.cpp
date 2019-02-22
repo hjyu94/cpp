@@ -28,7 +28,7 @@ public:
 class D : public C
 {
 public:
-	void print() { cout << "D" << endl; }
+	int print() { cout << "D" << endl; }
 };
 
 void main()
@@ -37,21 +37,32 @@ void main()
 	A a; B b; C c; D d;
 
 	A& ref1_1 = a;
-	ref11.print(); // A
+	ref1_1.print(); // A
+
 	A& ref1_2 = b;
-	ref2.print(); // A
+	ref1_2.print(); // B
+
 	A& ref1_3 = c;
-	ref3.print(); // A
+	ref1_3.print(); // C
+
 	A& ref1_4 = d;
-	ref4.print(); // A
+	ref1_4.print(); // D
+
 	cout << endl;
+
 
 	// B& ref1 = a; // X
 	// ref1.print(); // X
+
 	B& ref2_1 = b;
 	ref2_1.print(); // B
-	ref1 = c;
-	ref1.print(); // B
-	ref1 = d;
-	ref1.print(); // B
+
+	B& ref2_2 = c;
+	ref2_2.print(); // C
+	
+	B& ref2_3 = d;
+	ref2_3.print(); // D
+
+	cout << endl;
+
 }

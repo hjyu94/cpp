@@ -84,6 +84,13 @@
     <ClCompile Include="12.4 가상 소멸자.cpp" />
     <ClCompile Include="12.5 동적 바인딩과 정적 바인딩.cpp" />
     <ClCompile Include="12.6 가상 (함수) 표.cpp" />
+    <ClCompile Include="12.7 순수 가상 함수, 추상 기본 클래스.cpp" />
+    <ClCompile Include="12.7 인터페이스 클래스.cpp" />
+    <ClCompile Include="12.8 가상 기본 클래스와 다이아몬드 상속 문제.cpp" />
+    <ClCompile Include="12.8 가상 기본 클래스와 다이아몬드 상속 문제_2.cpp" />
+    <ClCompile Include="12.9 객체 잘림과 reference wrapper.cpp" />
+    <ClCompile Include="12.9 객체 잘림과 reference wrapper_2.cpp" />
+    <ClCompile Include="12.9 객체 잘림과 reference wrapper_3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />

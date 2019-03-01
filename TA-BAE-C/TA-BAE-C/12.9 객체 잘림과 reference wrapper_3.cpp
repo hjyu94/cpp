@@ -72,7 +72,7 @@ void main()
 	vec_ani.push_back(dog);
 	vec_ani.push_back(cow);
 	vec_ani.push_back(cat);
-	
+
 	for (auto& e : vec_ani)
 		e.speak();
 	// 다형성 발현 안됨

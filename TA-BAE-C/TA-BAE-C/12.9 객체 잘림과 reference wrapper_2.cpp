@@ -52,6 +52,9 @@ int main()
 	// derived를 넣었지만 push_back 함수 내에서 객체 잘림이 발생해서
 	// 다형성이 발현되지 않는다.
 
+	// Base vector_element = d;
+	// 객체 잘림 현상 발생
+
 	for (auto & e : my_vec)
 		e.print();
 	// I'm Base
@@ -66,7 +69,7 @@ int main()
 
 	/**********************************************************/
 
-	// [포인터 벡터를 이용한 해결]
+	// [레퍼런스가 아니라 포인터를 이용하자]
 	std::vector<Base*> my_vec2;
 	my_vec2.push_back(&b);
 	my_vec2.push_back(&d);

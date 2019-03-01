@@ -31,6 +31,7 @@ void main()
 	cout << "0: add, 1:subtract" << endl;
 	cin >> op;
 
+	/****************************************/
 	// static binding, early binding
 	int result;
 	switch (op)
@@ -39,7 +40,7 @@ void main()
 	case 1: result = subtract(x, y); break;
 	}
 	cout << result << endl;
-
+	/****************************************/
 	// dynamic binding, late binding
 	int(*func_ptr)(int, int) = nullptr;
 	switch (op)

@@ -37,6 +37,7 @@ public:
 
 	// ??? 를 뭐하러 띄우냐 그냥 바디를 지워랏!
 	// 단 이를 상속한 자식 클래스에서는 반드시 오버라이딩해서 정의해줘야 한다.
+
 	// pure virtual function
 	virtual void speak() const = 0;
 };

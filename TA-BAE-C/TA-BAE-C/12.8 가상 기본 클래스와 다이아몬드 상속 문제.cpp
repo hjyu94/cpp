@@ -47,6 +47,7 @@ public:
 	}
 };
 
+
 class Copier : public Scanner, public Printer
 {
 public:
@@ -55,6 +56,7 @@ public:
 	{
 	}
 };
+
 
 int main()
 {

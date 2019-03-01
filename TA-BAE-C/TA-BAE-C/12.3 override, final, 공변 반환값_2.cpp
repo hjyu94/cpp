@@ -6,6 +6,9 @@ class A
 {
 public:
 	void print() { cout << "A" << endl; }
+
+	// virtual!
+	// 반환 타입이 다르지만(A*, B*) this 포인터를 리턴함-> 오버라이딩임
 	virtual A* getThis()
 	{
 		cout << "A::getThis()" << endl;
@@ -17,7 +20,10 @@ class B : public A
 {
 public:
 	void print() { cout << "B" << endl; }
-	virtual B* getThis() 
+
+	// virtual!
+	// 반환 타입이 다르지만(A*, B*) this 포인터를 리턴함-> 오버라이딩임
+	virtual B* getThis() override
 	{
 		cout << "B::getThis()" << endl;
 		return this; 

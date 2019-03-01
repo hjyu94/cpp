@@ -39,6 +39,7 @@ public:
 	{
 		cout << "~Derived()" << endl;
 		delete[] m_array;
+		m_array = nullptr;
 	}
 };
 
@@ -62,6 +63,7 @@ void main()
 		
 		delete base;
 		// ~Base()
+		// ~Derived() 가 호출되지 않는다는 문제 !!
 
 		// 자식 클래스는 뭘로 만들었는지 모르는 경우가 많다
 		// 새 고양이 쥐 토끼 다람쥐 까치...

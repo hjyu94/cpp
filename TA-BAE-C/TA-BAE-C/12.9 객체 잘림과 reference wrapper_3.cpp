@@ -17,7 +17,6 @@ public:
 
 public:
 	string getName() { return m_name; }
-
 	virtual void speak() const { cout << m_name << " ???" << endl; }
 };
 
@@ -66,7 +65,7 @@ void main()
 	Cow cow("Cow");
 	Cat cat("Cat");
 
-	/************************************/
+	/********************************************/
 
 	vector<Animal> vec_ani;
 	vec_ani.push_back(dog);
@@ -75,9 +74,14 @@ void main()
 
 	for (auto& e : vec_ani)
 		e.speak();
+	// Animal vec_ele_0 = dog; // 객체 잘림
+	// ...
+	// auto& e = vec_ele_0;
+	// e.speak();
+
 	// 다형성 발현 안됨
 
-	/************************************/
+	/********************************************/
 
 	vector<reference_wrapper<Animal>> vec_ref_ani;
 	// Animal 레퍼런스 변수들을 모아놓은 벡터가 된다.
@@ -87,5 +91,11 @@ void main()
 
 	for (auto& e : vec_ref_ani)
 		e.get().speak();
-	// 다형성 발현 된다.
+
+	// reference_wrapper<Animal> vec_ele_0 = dog; 	
+	// ...
+	// auto& e = vec_ele_0;
+	// Animal& r_ani = e.get()
+	// r_ani.speak();
+
 }

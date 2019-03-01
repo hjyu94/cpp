@@ -60,6 +60,8 @@ int main()
 	// Base 클래스에만 있는 정보들만 호출된다.
 	// 결국 다형성이 사라진다.
 
+	/* doSomething 함수 사용하는 경우*/
+
 	doSomething(d);
 	// 다형성이 발현되어 I'm derived가 호출된다.
 

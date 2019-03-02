@@ -40,8 +40,8 @@ class Copier : public Scanner, public Printer
 {
 public:
 	Copier(int scanner, int printer, int power)
-		: Scanner(scanner, power), Printer(printer, power),
-		PoweredDevice(power)
+		: Scanner(scanner, power), Printer(printer, power)
+		// , PoweredDevice(power) // PoweredDevice의 생성자 호출
 	{
 	}
 };

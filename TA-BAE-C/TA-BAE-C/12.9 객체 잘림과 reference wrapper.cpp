@@ -60,6 +60,7 @@ int main()
 	// Base 클래스에만 있는 정보들만 호출된다.
 	// 결국 다형성이 사라진다.
 
+
 	/* doSomething 함수 사용하는 경우*/
 
 	doSomething(d);
@@ -67,7 +68,7 @@ int main()
 
 	// 만약 
 	// void doSomething(Base& b) 가 아니라
-	// void doSomething(Base& b) 였다면
+	// void doSomething(Base b) 였다면
 	// 다형성이 사라지고 I'm based가 호출된다.
 	
 	return 0;

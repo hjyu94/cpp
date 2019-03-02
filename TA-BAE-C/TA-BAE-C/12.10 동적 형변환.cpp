@@ -68,6 +68,7 @@ void main()
 		auto* base_to_d2 = dynamic_cast<Derived2*>(base);
 		// cout << base_to_d2->m_name << endl;
 		// 어라... 에러도 안 뜨고 아무것도 안 뜬다 왜지?
+		// (Derived1 -> Base -> Derived2 라서 사실 당연하긴 함)
 
 		if (base_to_d2 != nullptr)
 			base_to_d2->print();

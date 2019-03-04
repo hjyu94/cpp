@@ -99,6 +99,10 @@
     <ClCompile Include="13.3 자료형이 아닌 템플릿 매개변수.cpp" />
     <ClCompile Include="14.1 예외처리의 기본.cpp" />
     <ClCompile Include="14.2 예외처리와 스택 되감기.cpp" />
+    <ClCompile Include="13.4 함수 템플릿 특수화.cpp" />
+    <ClCompile Include="13.4 Storage.cpp" />
+    <ClCompile Include="13.5 클래스 템플릿 특수화.cpp" />
+    <ClCompile Include="13.5 클래스 템플릿 특수화_2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />
@@ -108,6 +112,7 @@
     <ClInclude Include="8.8 클래스 코드와 헤더 파일.h" />
     <ClInclude Include="13.2 MyArray.h" />
     <ClInclude Include="13.3 MyArray.h" />
+    <ClInclude Include="13.4 Storage.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="4.7 열거형 enumerated types.cpp" />

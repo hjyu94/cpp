@@ -103,6 +103,8 @@
     <ClCompile Include="13.4 Storage.cpp" />
     <ClCompile Include="13.5 클래스 템플릿 특수화.cpp" />
     <ClCompile Include="13.5 클래스 템플릿 특수화_2.cpp" />
+    <ClCompile Include="14.3 예외 클래스와 상속.cpp" />
+    <ClCompile Include="14.4 exception 소개.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />

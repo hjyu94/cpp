@@ -55,9 +55,9 @@ void doSomething()
 		// ArrayException의 객체도 받아주긴 하지만
 		// 부모의 report 함수가 호출된다.
 
-		// throw e; // re-throw 개념 // main에서의 catch에서 또 받아줌
-		// 객체잘림 // Exception에서 받아줌
-		throw; // ArrayException에서 받아주게 됨
+		// re-throw 개념 // main에서의 catch에서 또 받아줌
+		throw e; // 객체잘림 // Exception에서 받아줌
+		throw;   // ArrayException에서 받아주게 됨
 	}
 	catch (ArrayException& e)
 	{
@@ -74,12 +74,14 @@ void main()
 	{
 		doSomething();
 	}
-	catch (ArrayException& e)
+
+	catch (Exception& e)
 	{
 		cout << "main() ";
 		e.report();
 	}
-	catch (Exception& e)
+
+	catch (ArrayException& e)
 	{
 		cout << "main() ";
 		e.report();

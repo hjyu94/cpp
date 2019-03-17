@@ -110,6 +110,10 @@
     <ClCompile Include="13.6 템플릿을 부분적으로 특수화하기.cpp" />
     <ClCompile Include="13.6 템플릿을 부분적으로 특수화하기_2.cpp" />
     <ClCompile Include="18.1 istream으로 입력받기.cpp" />
+    <ClCompile Include="15.1 이동의 의미와 스마트 포인터.cpp" />
+    <ClCompile Include="15.1 이동의 의미와 스마트 포인터_2.cpp" />
+    <ClCompile Include="15.2 오른쪽-값 참조.cpp" />
+    <ClCompile Include="15.3 이동 생성자와 이동 대입.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />

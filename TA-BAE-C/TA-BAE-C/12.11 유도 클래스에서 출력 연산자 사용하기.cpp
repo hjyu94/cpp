@@ -50,4 +50,12 @@ int main()
 	cout << b_ref << endl;
 
 	return 0;
+
+	/*
+		[Ãâ·Â]
+		Base
+		Derived
+		Derived
+	*/
+
 }

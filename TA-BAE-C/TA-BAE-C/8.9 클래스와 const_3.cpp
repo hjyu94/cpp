@@ -12,13 +12,22 @@ class Something
 public:
 	string m_value = "default";
 
+	/*string getValue() const
+	{
+		return m_value;
+	}*/
+	// 얘는 가능
+
+	// 레퍼런스를 리턴하는데 함수가 const인 경우!
 	/*const*/ string& getValue() const
 		// 앞의 const 주석 처리하면 에러
 	{
 		cout << "const version" << endl;
 		return m_value;
 	}
-	// sth1.getValue() = "Another string";
+	
+	// string str = getValue();
+	// str = "another";
 	// 이런 일이 발생할 수 있다.
 
 	// getValue()는 const 함수이므로 멤버 변수 값을 바꿔서는 안되므로
@@ -29,7 +38,6 @@ public:
 	// string& str_Ref = m_value;		// X
 	// const string& str_Ref = m_value;	// O
 
-	
 	string& getValue()
 	{
 		cout << "non-const version" << endl;

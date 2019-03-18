@@ -9,17 +9,41 @@ private:
 
 public:	
 	Something()
-		//: s_value(1024)
-	{}
+		: s_value(1024) // X
+	{
+		s_value = 1024; // O
+	}
 };
 
 int Something::s_value = 1;
-// static 멤버 변수를 생성자에서 초기화 할 수 없다.
 
-// static 멤버 변수를 사용하는 함수는 static 멤버 함수여야 한다.
-// 생성자가 static이어야 static 멤버 변수에 값을 넣어줄 수 있는데
-// 생성자는 static으로 만들 수 없다.
-// ---> ??? non static 멤버 함수에서 static 멤버 변수에 값 변경해줄 수 있는데...?
+
+// static 멤버 변수를 생성자의 이니셜라이져에서 초기화 할 수 없다.
+//
+//					static변수		non-static변수	static함수	non-static함수
+// non static ftn:		O				O				O			O
+// static ftn:			O				X				O			X
+
+/**************************************************************/
+
+class Sth
+{
+private:
+	int m_value;
+public:
+	void non_print()
+	{
+		cout << m_value << endl;
+	}
+	static void print(Sth sth)
+	{
+		sth.non_print(); // 얘는 가능한데
+		non_print(); // 애는 불가능
+	}
+};
+
+Sth::print(); //-> m_value를 접근할 때 어떤 객체의 변수를 접근해야 하는가...
+// 따라서 static 함수에서 non-static변수를 접근할 수 없다.
 
 /**************************************************************/
 

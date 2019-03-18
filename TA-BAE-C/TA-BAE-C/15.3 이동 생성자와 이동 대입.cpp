@@ -157,4 +157,5 @@ void main()
 		main_res = generateResource();
 		// return 되는 값을 R-value
 	}
+
 }

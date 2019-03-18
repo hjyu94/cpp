@@ -1,8 +1,10 @@
-// memory: data / code / heap / stack
+//https://b2it.tistory.com/64
+// memory: code/ data / heap / stack
 
-// data: 전역 변수, static 변수
+// code: 함수, 구조체 정의
+// data: 전역 변수, static 변수, 문자열 상수
 // heap: 동적 할당된 변수
-// stack: 지역 변수
+// stack: 지역 변수, 파라매터
 
 #include <iostream>
 

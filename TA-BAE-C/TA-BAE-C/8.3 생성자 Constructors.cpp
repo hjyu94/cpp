@@ -5,6 +5,7 @@ using namespace std;
 class Fraction
 {
 private:
+public:
 	int m_numerator;
 	int m_denominator;
 	// 초기화해주지 않고 출력할 시 런타임 에러 발생한다.

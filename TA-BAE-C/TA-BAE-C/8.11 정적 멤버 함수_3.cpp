@@ -67,6 +67,7 @@ public:
 };
 int Another::s_value = 1;
 Another::_init Another::s_initializer; // ??????
+// int a; 꼴?
 
 // 얘가 만들어지면서 inner 클래스의 생성자가 초기화되고
 // inner 클래스의 생성자에서 s_value 가 초기화 된다.

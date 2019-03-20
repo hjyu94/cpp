@@ -117,6 +117,11 @@
     <ClCompile Include="16.1 표준 템플릿 라이브러리, 컨테이너 소개.cpp" />
     <ClCompile Include="17.1 string과 wstring.cpp" />
     <ClCompile Include="17.2 string의 여러가지 생성자들과 형변환.cpp" />
+    <ClCompile Include="9.4 비교 연산자 오버로딩 하기.cpp" />
+    <ClCompile Include="9.5 증감 연산자 오버로딩 하기.cpp" />
+    <ClCompile Include="9.9 복사 생성자, 복사 초기화 반환값 최적화.cpp" />
+    <ClCompile Include="9.10 변환 생성자, explicit, delete.cpp" />
+    <ClCompile Include="9.11 대입 연산자 오버로딩, 깊은 복사, 얕은 복사.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />

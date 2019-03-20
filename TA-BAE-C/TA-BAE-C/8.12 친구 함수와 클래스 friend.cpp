@@ -28,7 +28,7 @@ void doSomething(A& a, B& b)
 // doSomething 함수를 friend라고 적어주면
 // 해당 클래스의 private 변수도 사용 가능하다.
 
-// [ 전방선언 ]
+// [전방선언]
 // 밑에 어딘가 B의 정의가 있으니
 // B에 관한 모르는 내용이 있으면 더 밑에를 읽어보라
 class B2;

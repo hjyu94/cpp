@@ -10,11 +10,11 @@ private:
 public:
 	static int s_public;
 
-	int get_public() { return s_public; }
-	int get_private1() { return s_private; }
-	static int get_private2() { return s_private; }
-	void print_public() { s_public = 3; cout << ++s_public << endl; }
-	void print_private() { s_private = 3; cout << ++s_private << endl; }
+	int			get_public() { return s_public; }
+	int			get_private1() { return s_private; }
+	static int	get_private2() { return s_private; }
+	void		print_public() { s_public = 3; cout << ++s_public << endl; }
+	void		print_private() { s_private = 3; cout << ++s_private << endl; }
 };
 
 /*static:없어야함*/ int Something::s_private = 1;

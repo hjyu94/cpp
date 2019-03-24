@@ -68,7 +68,7 @@ void doSomething()
 	// Stack : 함수 시작시 할당 ~ 함수 종료시 반납
 
 	// Code: 함수, 구조체 정의
-	// Data: 정적 변수(static), 전역 변수,
+	// Data: 정적 변수(static), 전역 변수, 문자열 상수
 	// Heap: 동적 할당 된 변수
 	// Stack: 지역 변수, 파라매터
 

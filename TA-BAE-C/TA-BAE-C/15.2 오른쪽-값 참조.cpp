@@ -17,7 +17,8 @@ void doSomething(int& lref)
 	cout << "L-value ref" << endl;
 }
 
-// 어짜피 다른데서 사용할 일이 없기 때문에
+// 어짜피 R-ref는 사용 후 사라지기 때문에
+// 이후 사용할 일이 없고
 // 막 가져다가 써도 된다.
 // move semantics를 사용 가능
 void doSomething(int&& ref)
@@ -27,14 +28,20 @@ void doSomething(int&& ref)
 
 int main()
 {
-	int x = 5;
+	int x /* l-val */ 
+		= 5 /* r-val */;
 	// r-value는 곧 사라짐
 	// l-value에 r-value를 넣어서 계속 사용하겠다는 의미
-	int y = getResult();
+
+	int y /* l-val */
+		= getResult(); /* r-val */
 	// 함수의 리턴값을 r-value로 사용하고 있다.
-	const int cx = 6;
+
+	const int cx /* l-val */
+		= 6; /* r-val */
 	// const: 나중에 값을 바꿀 수 없다.
 
+	// ------------------------------------------------------
 	// [L-value references]
 	int& lr1 = x;	// Modifiable l-values
 	int& lr2 = cx;	// Non-modifiable l-values
@@ -42,10 +49,12 @@ int main()
 	// 참조변수는 자기가 참조하는 변수가 메모리를 갖고 있어야 한다
 	// 따라서 메모리가 없는 값을 넣을 수 없다
 
+	// const에 한해서는 가능하다.
 	const int& lr4 = x;	// Modifiable l-values
 	const int& lr5 = cx; // Non-modifiable l-values
 	const int& lr6 = 5; // R-values
-
+	
+	// ------------------------------------------------------
 	// [R-value references]
 	// &&: R-value만 받을 수 있다.
 	int&& rr1 = x;	// Modifiable l-values

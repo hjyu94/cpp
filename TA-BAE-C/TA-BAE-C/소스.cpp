@@ -1,17 +1,39 @@
-#include "伯希.h"
+#include <iostream>
+using namespace std;
 
-int MyArray::getLength() const
+class Resource
 {
-	return 	
-}
+public:
+	int* m_data;
+	int m_length;
+
+	Resource(const int _length)
+	{
+		cout << "Resource 持失切" << endl;
+		m_data = new int[_length];
+		m_length = _length;
+	}
+
+
+};
+
+template <typename T>
+class AutoPtr
+{
+public:
+	T* m_ptr;
+
+	AutoPtr(T* _ptr = nullptr)
+	{
+		cout << "AutoPtr 持失切" << endl;
+		m_ptr = _ptr;
+	}
+
+	
+};
 
 void main()
 {
-	MyArray<int> my_array(10);
-	for (int i = 0; i < my_array.getLength(); ++i)
-	{
-		my_array[i] = i * 10;
-	}
-
-	my_array.print();
+	AutoPtr<Resource> res1(new Resource(10));
+	AutoPtr<Resource> res2 = res1;
 }

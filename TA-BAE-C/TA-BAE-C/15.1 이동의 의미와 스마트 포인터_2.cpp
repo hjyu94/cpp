@@ -61,6 +61,10 @@ public:
 	
 };
 
+
+void another(AutoPtr<Resource> ptr)
+{}
+
 void doSomething()
 {
 	{
@@ -91,13 +95,17 @@ void doSomething()
 	// 기호는 + 기호로 같지만 string 덧셈은 append의 의미를 갖는다.
 	// 이게 semantics!
 
-	
+	// [Semantics]
 	// value semantics (copy semantics)
 	// reference semantics (pointer)
 	// move semantics (move)
 
-	doSomething(res1);
-	// doSometing 함수 res1을 실인자로 받음
-	// 함수가 끝나면서 메모리를 반납해버리니까 함수 호출 이후에 문제가 생기기도 한다.
-	// 이런 문제들 때문에 오토 포인터는 사용이 중지가 되었다
+	{
+		AutoPtr<Resource> res1(new Resource);
+		another(res1);
+		// doSometing 함수 res1을 실인자로 받음
+		// 함수가 끝나면서 메모리를 반납해버리니까 함수 호출 이후에 문제가 생기기도 한다.
+		// 이런 문제들 때문에 오토 포인터는 사용이 중지가 되었다
+	}
 }
+

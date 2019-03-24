@@ -130,6 +130,9 @@
     <ClCompile Include="9.12 이니셜라이져 리스트 initializer list_2.cpp" />
     <ClCompile Include="9.12 이니셜라이져 리스트 initializer list_3.cpp" />
     <ClCompile Include="9.12 이니셜라이져 리스트 initializer list_4.cpp" />
+    <ClCompile Include="13.7 포인터에 대한 템플릿 특수화.cpp" />
+    <ClCompile Include="13.8 멤버 함수를 한 번 더 템플릿화 하기.cpp" />
+    <ClCompile Include="15.4 std_move.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />

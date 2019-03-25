@@ -13,6 +13,7 @@ public:
 	/* 1 */
 	// virtual ~Base() 
 	// 이 경우 자식 클래스의 소멸자를 override 라고 적어줄 수 있다.
+
 	/* 2 */
 	~Base()
 	{
@@ -34,6 +35,7 @@ public:
 	
 	/* 1 */
 	// virtual ~Derived () override
+
 	/* 2 */
 	~Derived ()
 	{

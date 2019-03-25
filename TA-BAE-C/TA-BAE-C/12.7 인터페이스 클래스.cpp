@@ -9,8 +9,9 @@ using namespace std;
 class IErrorLog // I+ErrorLog: I는 인터페이스 의미
 {
 public:
-	/* 가상함수 */ virtual bool reportError(const char* errorMessage) = 0;
-	/* 가상함수 */ virtual ~IErrorLog() {}
+	/* 순수가상함수 */ virtual bool reportError(const char* errorMessage) = 0;
+	/* 가상함수     */ virtual ~IErrorLog() {}
+	///* 가상함수 */ virtual ~IErrorLog() = 0; // 불가능
 	// 소멸자는 가상함수일지라도 자식 클래스에서 따로 오버라이딩해주지 않아도 ㄱㅊ
 	// 기본 소멸자가 만들어짐.
 };

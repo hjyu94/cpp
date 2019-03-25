@@ -32,7 +32,9 @@ public:
 void doSomething()
 {
 	Resource *res = new Resource;
+	
 	// work with res
+	
 	delete res;
 	return;
 }

@@ -134,7 +134,7 @@ int main()
 		// assignment operator 호출
 
 		// copy가 생성되는거면 복사 생성자가 호출이되고
-		// 이럴 필요 없이 copy = hello 꼴이면 대입 연산자가 호출된다.
+		// 새롭게 객체가 생성되지 않고, copy = hello 꼴이면 대입 연산자가 호출된다.
 
 		cout << (int*)copy.m_data << endl;
 		cout << copy.getString() << endl;

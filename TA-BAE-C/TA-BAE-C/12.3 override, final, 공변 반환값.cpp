@@ -32,6 +32,8 @@ public:
 	// 오버라이딩이라고 적어놓으면 이 함수는 무조건 오버라이딩 할 함수!
 	// 혹시 모를 컴파일 에러를 찾아준다
 	// 실수로 int를 short라고 적은 거라고 생각해서 빨간줄로 에러를 표시해줌
+	
+	virtual void print(int x) const override { cout << "B" << endl; } // O!!!
 };
 
 class C : public B
@@ -44,7 +46,7 @@ public:
 class D : public C
 {
 public:
-	virtual void print() { cout << "D" << endl; }
+	virtual void print() override { cout << "D" << endl; }
 	// 부모 클래스인 C에서 해당 함수를 final로 적어주어서
 	// 자식 클래스인 D에서 오버라이딩 할 수 없다.
 };

@@ -43,10 +43,9 @@ public:
 	{
 		for (unsigned i = 0; i < arr.m_length; ++i)
 			out << arr.m_data[i] << ' ';
-		out << endl;
 		return out;
 	}
-	/*
+	
 	IntArray& operator = (IntArray& _arr)
 	{
 		cout << "복사 대입 생성자" << endl;
@@ -56,8 +55,13 @@ public:
 	IntArray& operator = (const std::initializer_list<int>& _arr)
 	{
 		cout << "복사 대입 생성자" << endl;
+		m_length = _arr.size();
+		m_data = new int[m_length];
+		int iCnt = 0;
+		for (auto& e : _arr)
+			m_data[iCnt++] = e;
 		return *this;
-	}*/
+	}
 };
 
 int main()
@@ -67,8 +71,6 @@ int main()
 
 	IntArray int_array2; // 기본 생성자
 	int_array2 = { 1, 2, 3, 4, 5 }; // 복사 대입 생성자
-	cout << int_array2.m_length << endl; // 0 출력됨
-
 	cout << int_array2 << endl;
 
 	return 0;

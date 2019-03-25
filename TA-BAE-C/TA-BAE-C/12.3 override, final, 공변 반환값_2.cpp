@@ -47,7 +47,9 @@ void main()
 	// 내부적으로 A 임을 한번 더 거쳐서 출력함
 
 	cout << typeid(b.getThis()).name() << endl;
-	// class B * __ptr64
+	// class B * 
+	// __ptr64
 	cout << typeid(ref.getThis()).name() << endl;
-	// class A * __ptr64
+	// class A * 
+	// __ptr64
 }

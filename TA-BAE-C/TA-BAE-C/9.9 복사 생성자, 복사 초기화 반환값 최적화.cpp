@@ -50,6 +50,7 @@ void main()
 
 	Fraction fr_copy(frac); // copy constructor 호출
 	Fraction fr_copy2 = frac; // 이때도 copy constructor 호출
+	// == Fraction fr_copy2(frac);
 
 	Fraction fr_copy3(Fraction(3, 5)); 
 	// 새로 객체를 만들고 걔를 인자로 넣어주면 복사 생성자가 호출되지 않음
@@ -65,15 +66,14 @@ void main()
 
 	// [디버그 모드]
 	// constructor called
-	// 0x100
+	// 0x100 - doSomething stack
 	// copy constructor called 
-	// 0x200
+	// 0x200 - main stack
 
 	// [릴리즈 모드]
 	// constructor called
-	// 0x100
-	// 0x100
+	// 0x100 - main stack
+	// 0x100 - main stack
 
 	// return value optimization -> 컴파일러가 최적화를 도와주는 것!
-
 }

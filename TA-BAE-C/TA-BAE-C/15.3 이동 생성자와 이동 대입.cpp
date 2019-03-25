@@ -44,8 +44,8 @@ public:
 		}
 	}
 
-	// copy assignment
-	//
+	// [copy assignment]
+	// deep copy
 	// AutoPtr<Resource> res2 = res1;
 	// *m_ptr = *a.m_ptr; 이때 호출된다.
 	Resource& operator = (Resource& res)

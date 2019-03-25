@@ -23,7 +23,7 @@ public:
 
 	PoweredDevice(int power)
 	{
-		cout << "PowerDevice: " << power << endl;
+		cout << "PoweredDevice: " << power << endl;
 	}
 };
 

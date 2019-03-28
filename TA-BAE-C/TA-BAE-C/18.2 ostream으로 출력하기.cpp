@@ -63,8 +63,21 @@ int main()
 	cout << std::setprecision(6) << 123.456 << endl;
 	cout << std::setprecision(7) << 123.456 << endl;
 	cout << endl;
-	
-	
+
+	cout << std::showpoint;
+	cout << std::setprecision(3) << 123.456 << endl;
+	cout << std::setprecision(4) << 123.456 << endl;
+	cout << std::setprecision(5) << 123.456 << endl;
+	cout << std::setprecision(6) << 123.456 << endl;
+	cout << std::setprecision(7) << 123.456 << endl;
+	cout << endl;
+
+	cout << -12345 << endl;
+	////cout.fill('*'); // 빈칸을 *로 채워라
+	cout << std::setw(10) << -12345 << endl; // 10자리를 채워서 출력하라
+	cout << std::setw(10) << std::left << -12345 << endl; // 10자리를 채워서 출력하라
+	cout << std::setw(10) << std::right << -12345 << endl; // 10자리를 채워서 출력하라 // 왼쪽으로 붙여서
+	cout << std::setw(10) << std::internal << -12345 << endl; // 10자리를 채워서 출력하라 // 부호와 숫자 사이에 빈칸
 
 
 	// 이 외에도 여러개의 플래그가 있음

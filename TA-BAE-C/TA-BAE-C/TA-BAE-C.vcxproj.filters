@@ -134,6 +134,7 @@
     <ClCompile Include="13.8 멤버 함수를 한 번 더 템플릿화 하기.cpp" />
     <ClCompile Include="15.4 std_move.cpp" />
     <ClCompile Include="18.2 ostream으로 출력하기.cpp" />
+    <ClCompile Include="18.3 문자열 스트림.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="1.11.2 헤더파일 만들기2.h" />

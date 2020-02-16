@@ -35,15 +35,27 @@ private:
 	double m_d;
 
 public:
+	// [문제 되는 상황 1]
 	Daughter(const int& i_in, const double& d_in)
 	// Mother 클래스의 기본 생성자가 없어서 에러가 생김
 	// Daughter 생성자 내부적으로 Mother 클래스의 기본 생성자를 호출하기 때문
+	{ // --> red underline
+		// 해결책1) Mother 클래스의 기본생성자 만들어주기
+		// 해결책2) Daughter 생성자 호출할 때 Mother의 생성자 호출해주기
+		m_d = d_in
+	} // --> red underline
 
-	// 해결책1) Mother 클래스의 기본생성자 만들어주기
-	// 해결책2) Daughter 생성자 호출할 때 Mother의 생성자 호출해주기
+	// [문제 되는 상황 2]
+	Daughter(const int& i_in, const double& d_in)
+	{
+		// Mother::setValue(i_in); // no default constructor for class "Mother"
+		m_d = d_in;
+	}
 
-	{ // 빨간줄 있음
-		Mother::setValue(i_in);
+	// [해결책 2]
+	Daughter(const int& i_in, const double& d_in)
+		: Mother(i_in)
+	{
 		m_d = d_in;
 	}
 

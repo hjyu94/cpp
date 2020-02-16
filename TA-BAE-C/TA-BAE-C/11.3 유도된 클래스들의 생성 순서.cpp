@@ -40,7 +40,7 @@ public:
 	double m_d;
 
 	B()
-6		:m_d(3.14) // , m_i(1) // X
+6		: /* m_i(1), (X) */ m_d(3.14)
 1	{
 7		cout << "Child construction" << endl;
 8	}

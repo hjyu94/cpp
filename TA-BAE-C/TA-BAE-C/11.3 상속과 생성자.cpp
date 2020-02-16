@@ -16,7 +16,7 @@ public:
 class Derived : public Base
 {
 public:
-	int d_value;
+	double d_value;
 
 	Derived(const double& d_in)
 	{
@@ -24,8 +24,8 @@ public:
 	}
 
 	// 에러나는 이유?
-	// 상속받는 경우 Derived 생성자의 이니셜라이져리스트에 
-	// 부모의 기본 생성자가 생략되어 있다.
+	// 상속받는 경우 Derived 생성자의 
+	// "이니셜라이져리스트"에 "부모의 기본 생성자"가 생략되어 있다.
 
 	/*
 		Derived(const double& d_in)
@@ -47,7 +47,10 @@ class Base
 public:
 	int i_value;
 
-	Base(const int& i_in /*= 0*/) // 주석: 기본 생성자
+	Base(const int& i_in /*= 0*/) 
+		// = 0 을 붙여주면 기본 생성자도 같이 만드는 효과! 
+		// (인자가 없을 때 디폴트 값 0 을 넣어주기 때문에)
+		// 따라서 Derived 에 기본생성자가 사라지더라도 문제가 생기지 않는다.
 	{
 		i_value = i_in;
 	}
@@ -59,7 +62,6 @@ public:
 	int d_value;
 
 	Derived(const double& d_in)
-		// : Base(1024)
 	{
 		d_value = d_in;
 	}

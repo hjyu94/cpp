@@ -42,5 +42,14 @@
     <ClCompile Include="3.9_bit_flags_bit_masks.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="3.1_operator_precedence_and_associativity.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3.2_arithmetic_operators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="3.3_increment_decrement_operators.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

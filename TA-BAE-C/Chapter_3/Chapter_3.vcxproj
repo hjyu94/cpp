@@ -142,6 +142,9 @@
     <ClCompile Include="..\TA-BAE-C\3.1_operator_precedence_and_associativity.cpp" />
     <ClCompile Include="..\TA-BAE-C\3.2_arithmetic_operators.cpp" />
     <ClCompile Include="..\TA-BAE-C\3.3_increment_decrement_operators.cpp" />
+    <ClCompile Include="3.1_operator_precedence_and_associativity.cpp" />
+    <ClCompile Include="3.2_arithmetic_operators.cpp" />
+    <ClCompile Include="3.3_increment_decrement_operators.cpp" />
     <ClCompile Include="3.4_size_of_comma_ops_conditional_ops.cpp" />
     <ClCompile Include="3.5_relational_operators.cpp" />
     <ClCompile Include="3.6_logical_operators.cpp" />

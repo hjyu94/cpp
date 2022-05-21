@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="5.1_control_flow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="5.2_if.cpp" />
+    <ClCompile Include="5.3.1_switch-case.cpp" />
+    <ClCompile Include="5.3.2_switch-case.cpp" />
+    <ClCompile Include="5.4_goto.cpp" />
+    <ClCompile Include="5.5_while.cpp" />
+    <ClCompile Include="5.6_do-while.cpp" />
+    <ClCompile Include="5.7_for.cpp" />
+    <ClCompile Include="5.8_break_continue.cpp" />
+    <ClCompile Include="5.9_random_numbers.cpp" />
+    <ClCompile Include="5.10_std_cin.cpp" />
+  </ItemGroup>
+</Project>

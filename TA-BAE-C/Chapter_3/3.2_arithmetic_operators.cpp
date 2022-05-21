@@ -5,7 +5,7 @@ int _3_2()
 	using namespace std;
 
 	int x = 1;
-	int y = 1 - -x; // no whitespace for unary operator
+	int y = 1 - -x; // no whitespace for unary operator for reading easily 
 	
 	int a = 7;
 	int b = 4;

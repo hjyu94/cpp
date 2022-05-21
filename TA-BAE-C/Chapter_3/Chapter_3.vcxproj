@@ -139,9 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\TA-BAE-C\3.1_operator_precedence_and_associativity.cpp" />
-    <ClCompile Include="..\TA-BAE-C\3.2_arithmetic_operators.cpp" />
-    <ClCompile Include="..\TA-BAE-C\3.3_increment_decrement_operators.cpp" />
     <ClCompile Include="3.1_operator_precedence_and_associativity.cpp" />
     <ClCompile Include="3.2_arithmetic_operators.cpp" />
     <ClCompile Include="3.3_increment_decrement_operators.cpp" />

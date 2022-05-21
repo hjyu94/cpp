@@ -8,7 +8,7 @@ int _3_1()
 	r = 1 + 2 + 3 * 4;
 	a = b = c;
 	t /= --w + 5;
-	int rv = a || b && c || d;
+	int rv = a || b && c || d; // version ?
 
 	return 0;
 }

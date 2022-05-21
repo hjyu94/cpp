@@ -38,8 +38,8 @@ int _3_6()
 
 	// short circuit evaluation
 	{
-		// int x = 1, y = 2;	// case 1
-		int x = 2, y = 2;		// case 2
+		// int x = 1, y = 2;		// case 1: y=3
+		int x = 2, y = 2;			// case 2: y=2
 
 		if (x == 1 && y++ == 2)
 		{

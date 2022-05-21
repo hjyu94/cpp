@@ -22,7 +22,7 @@ int _3_4()
 	int x = 3;
 	int y = 10;
 	int z = (++x, ++y);
-	// === (++x; ++ y; int z = y;)
+	// === (++x; ++y; int z = y;)
 	// comma operator is useful in for loop
 
 	cout << x << " " << y << " " << z << endl;
@@ -60,7 +60,7 @@ int _3_4()
 	
 	cout << price << endl;
 
-	// In this case, we cannot declare onSale as const.
+	// In this case, we cannot declare price as const.
 	
 	const int price2 = (onSale == true) ? 10 : 100;
 	

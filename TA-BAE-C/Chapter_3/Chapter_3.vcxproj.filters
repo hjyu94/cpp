@@ -15,15 +15,6 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\TA-BAE-C\3.1_operator_precedence_and_associativity.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TA-BAE-C\3.2_arithmetic_operators.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\TA-BAE-C\3.3_increment_decrement_operators.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="3.4_size_of_comma_ops_conditional_ops.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>

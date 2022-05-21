@@ -83,6 +83,7 @@ int _3_9()
 
 	// In graphics, bit flags is useful.
 	{
+		// gl_clear(XXX_XXXXX_XXX | XXX_XXXX_XX)
  	}
 
 	// RGB Color, bit masks are useful.
@@ -107,4 +108,5 @@ int _3_9()
 		cout << "blue:\t" << bitset<8 >(blue) << " " << int(blue) << endl;
 	}
 
+	return 0;
 }

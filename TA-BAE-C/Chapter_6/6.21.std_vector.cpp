@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int main()
+int _6_21_main()
 {
 	// array 는 사이즈를 미리 정해줘야 하는 반면
 	// vecotr 는 동적 메모리 할당을 사용하기 때문에 사이즈를 적어주지 않아도 된다.

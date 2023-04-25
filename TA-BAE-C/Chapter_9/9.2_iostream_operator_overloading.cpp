@@ -15,20 +15,29 @@ public:
 	double getY() { return m_y; }
 	double getZ() { return m_z; }
 
-	void print()
+	/*void print()
 	{
 		cout << m_x << " " << m_y << " " << m_z;
+	}*/
+
+	friend std::ostream& operator << (std::ostream& out, const Point& point)
+	{
+		out << point.m_x << " " << point.m_y << " " << point.m_z;
+		return out; // for chaining
 	}
+
 };
 
 int main()
 {
 	Point p1(0.0, 0.1, 0.2), p2(3.4, 1.5, 2.0);
 
-	p1.print();
+	/*p1.print();
 	cout << endl;
 	p2.print();
-	cout << endl;
+	cout << endl;*/
+
+	cout << p1 << endl << p2 << endl;
 
 	return 0;
 }

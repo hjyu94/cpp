@@ -2,5 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="6.21.std_vector.cpp" />
+    <ClCompile Include="6.17_for_each.cpp" />
   </ItemGroup>
 </Project>

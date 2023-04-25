@@ -1,4 +1,6 @@
 #include <iostream>
+#include <limits>
+#include <algorithm>
 
 using namespace std;
 
@@ -14,4 +16,10 @@ int main()
 		cout << number << " ";
 	cout << endl;
 
+	// How to find maximum
+	int max_number = std::numeric_limits<int>::lowest();
+
+	for (const auto& n : fibonacci)
+		max_number = std::max(max_number, n);
+	cout << max_number << endl;
 }

@@ -27,6 +27,11 @@ public:
 		return out; // for chaining
 	}
 
+	friend std::istream& operator >> (std::istream& in, Point& point)
+	{
+		in >> point.m_x >> point.m_y >> point.m_z;
+		return in; // for chaining
+	}
 };
 
 int main()
@@ -44,6 +49,10 @@ int main()
 	of << p1 << endl << p2 << endl;
 
 	of.close();
+
+	Point p3, p4;
+	cin >> p3 >> p4;
+	cout << p3 << endl << p4 << endl;
 
 	return 0;
 }

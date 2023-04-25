@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Point
@@ -30,6 +31,8 @@ public:
 
 int main()
 {
+	ofstream of("out.txt");
+
 	Point p1(0.0, 0.1, 0.2), p2(3.4, 1.5, 2.0);
 
 	/*p1.print();
@@ -38,6 +41,9 @@ int main()
 	cout << endl;*/
 
 	cout << p1 << endl << p2 << endl;
+	of << p1 << endl << p2 << endl;
+
+	of.close();
 
 	return 0;
 }
